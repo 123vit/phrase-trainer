@@ -1,0 +1,1113 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>Phrase by phrase · Разговорный английский</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop stop-color='%235b4bdb'/%3E%3Cstop offset='1' stop-color='%238a5cf6'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='32' height='32' rx='9' fill='url(%23g)'/%3E%3Cpath d='M8 10h16v10H14l-5 4v-4H8z' fill='white'/%3E%3C/svg%3E">
+<script>
+/* Theme is resolved before first paint: a saved choice wins, otherwise the system setting. */
+(function(){var t=null;try{t=localStorage.getItem('ept-theme')}catch(_){}
+if(t!=='light'&&t!=='dark')t=window.matchMedia&&matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';
+document.documentElement.dataset.theme=t})();
+</script>
+<style>
+:root{
+  --font:Inter,"Segoe UI Variable Text","Segoe UI",system-ui,-apple-system,"Helvetica Neue",Arial,sans-serif;
+  --font-display:Inter,"Segoe UI Variable Display","Segoe UI",system-ui,-apple-system,"Helvetica Neue",Arial,sans-serif;
+  color-scheme:light;
+  --bg:#f3f2f9;--glow-1:#e2ddff;--glow-2:#ffe8dc;
+  --surface:#fff;--surface-2:#f8f7fd;--surface-3:#eeecf8;
+  --ink:#16152b;--ink-2:#48465f;--muted:#6f6d86;--line:#e6e4f0;--line-strong:#d2cfe2;
+  --accent:#5b4bdb;--accent-2:#8a5cf6;--accent-ink:#4636c2;--accent-soft:#eeecff;--accent-line:#cbc5fa;
+  --btn:linear-gradient(135deg,#5b4bdb,#8256ee);--on-btn:#fff;
+  --ok:#157a47;--ok-strong:#22a565;--ok-soft:#e7f7ee;--ok-line:#a8dcc0;
+  --warn:#8f5407;--warn-strong:#e59a1f;--warn-soft:#fff4e1;--warn-line:#efcb93;
+  --danger:#c42b45;--danger-strong:#e5484d;--danger-soft:#fdecef;--danger-line:#f1b5bf;
+  --key:#d2cfe2;--shadow:0 1px 2px rgb(22 21 43/.04),0 16px 36px -18px rgb(40 30 110/.22);
+  --pop:0 10px 30px -8px rgb(22 21 43/.28);--radius:22px
+}
+:root[data-theme=dark]{
+  color-scheme:dark;
+  --bg:#1b1a2b;--glow-1:#352c78;--glow-2:#472544;
+  --surface:#26253a;--surface-2:#2d2c44;--surface-3:#393853;
+  --ink:#f1f0fa;--ink-2:#cfcde2;--muted:#a5a2c0;--line:#3b3a56;--line-strong:#525073;
+  --accent:#9a8eff;--accent-2:#bc9bff;--accent-ink:#c2baff;--accent-soft:#353068;--accent-line:#5d54b4;
+  --btn:linear-gradient(135deg,#6f5ff0,#9a6cf6);--on-btn:#fff;
+  --ok:#7fe3b0;--ok-strong:#3bc983;--ok-soft:#1c3f2c;--ok-line:#2f7a51;
+  --warn:#f6c880;--warn-strong:#f2ad3c;--warn-soft:#423216;--warn-line:#846124;
+  --danger:#ff9aa9;--danger-strong:#f26273;--danger-soft:#4a2430;--danger-line:#903a4c;
+  --key:#151422;--shadow:0 1px 2px rgb(0 0 0/.22),0 18px 40px -20px rgb(0 0 0/.55);
+  --pop:0 12px 32px -8px rgb(0 0 0/.6)
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;min-height:100vh;min-height:100dvh;font-family:var(--font);font-size:15px;line-height:1.5;color:var(--ink);background:var(--bg);-webkit-font-smoothing:antialiased}
+body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;background:radial-gradient(900px 520px at 6% -14%,var(--glow-1),transparent 62%),radial-gradient(760px 460px at 104% -8%,var(--glow-2),transparent 60%)}
+button,select,input{font:inherit}
+button{cursor:pointer;color:inherit}
+button:disabled{cursor:default;opacity:.45}
+:focus-visible{outline:3px solid var(--accent-2);outline-offset:2px}
+p{line-height:1.5}
+.hidden{display:none!important}
+.ic{width:18px;height:18px;flex:none;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.sprite{position:absolute;width:0;height:0;overflow:hidden}
+
+/* App bar */
+.appbar{max-width:1440px;width:100%;margin:0 auto;padding:12px 24px 8px;display:flex;align-items:center;gap:18px}
+.brand{display:flex;align-items:center;gap:10px;font-family:var(--font-display);font-size:19px;font-weight:800;letter-spacing:-.03em;white-space:nowrap}
+.brand-mark{width:32px;height:32px;border-radius:10px;background:var(--btn);color:#fff;display:grid;place-items:center;box-shadow:0 8px 16px -8px var(--accent)}
+.brand-mark svg{width:18px;height:18px;fill:currentColor}
+.brand em{font-style:normal;background:linear-gradient(90deg,var(--accent),var(--accent-2));-webkit-background-clip:text;background-clip:text;color:transparent}
+h1{margin:0;padding-left:18px;border-left:1px solid var(--line-strong);font-size:13px;font-weight:500;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:0}
+.spacer{flex:1}
+.levels{display:flex;gap:2px;padding:3px;border-radius:13px;background:var(--surface-3);flex:none}
+.levels button{border:0;background:transparent;color:var(--muted);font-size:13px;font-weight:700;letter-spacing:.02em;padding:6px 13px;border-radius:10px;transition:background .15s,color .15s}
+.levels button:hover{color:var(--ink)}
+.levels button[aria-pressed=true]{background:var(--surface);color:var(--accent-ink);box-shadow:0 1px 3px rgb(0 0 0/.14)}
+.stats{display:flex;gap:16px;flex:none}
+.stat{display:flex;align-items:baseline;gap:6px;font-size:12px;color:var(--muted);white-space:nowrap}
+.stat b{font-family:var(--font-display);font-size:21px;line-height:1;color:var(--ink);font-variant-numeric:tabular-nums}
+.icon-btn{width:36px;height:36px;flex:none;display:grid;place-items:center;border-radius:11px;border:1px solid var(--line);background:var(--surface);color:var(--ink-2);transition:background .15s}
+.icon-btn:hover{background:var(--surface-2)}
+:root[data-theme=dark] .theme-moon,:root[data-theme=light] .theme-sun{display:none}
+
+/* Progress track: one segment per phrase */
+main{max-width:1440px;width:100%;margin:0 auto;padding:0 24px 14px}
+.track{display:flex;gap:3px;margin:0 0 4px}
+.seg{flex:1 1 0;min-width:0;height:20px;padding:7px 0;border:0;background:none}
+.seg::before{content:"";display:block;height:6px;border-radius:3px;background:var(--line-strong);transition:transform .15s,background .2s}
+.seg:hover::before{transform:scaleY(1.7)}
+.seg.ok::before{background:var(--ok-strong)}
+.seg.assisted::before{background:var(--warn-strong)}
+.seg.current::before{background:var(--accent);box-shadow:0 0 0 3px var(--accent-soft)}
+
+/* Cards and workspace */
+.workspace{display:grid;grid-template-columns:minmax(0,1.08fr) minmax(0,1fr);gap:14px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:18px 20px;box-shadow:var(--shadow);min-width:0}
+.task-panel,.practice-panel{display:flex;flex-direction:column;min-height:0}
+.task-body{min-height:0}
+.eyebrow{margin:0;font-size:11px;font-weight:750;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.round{display:flex;justify-content:space-between;align-items:center;gap:8px 12px}
+.round-tools{display:flex;align-items:center;gap:8px}
+/* Language switch: two fixed positions with a thumb that slides between them */
+.langs{position:relative;display:grid;grid-template-columns:1fr 1fr;padding:3px;border-radius:999px;background:var(--surface-3);flex:none}
+.langs::before{content:"";position:absolute;top:3px;bottom:3px;left:3px;width:calc(50% - 3px);border-radius:999px;background:var(--btn);box-shadow:0 6px 12px -6px var(--accent);transition:transform .22s cubic-bezier(.3,.7,.3,1)}
+.langs[data-lang=de]::before{transform:translateX(100%)}
+.langs button{position:relative;border:0;background:none;padding:5px 14px;border-radius:999px;font-size:13px;font-weight:700;color:var(--muted);transition:color .2s}
+.langs button:hover{color:var(--ink)}
+.langs button[aria-pressed=true]{color:#fff}
+.modes{display:flex;gap:2px;padding:2px;border-radius:10px;background:var(--surface-3)}
+.modes button{display:inline-flex;align-items:center;gap:5px;border:0;background:transparent;color:var(--muted);font-size:12px;font-weight:650;padding:4px 9px;border-radius:8px;transition:background .15s,color .15s}
+.modes button .ic{width:14px;height:14px}
+.modes button:hover{color:var(--ink)}
+.modes button[aria-pressed=true]{background:var(--surface);color:var(--accent-ink);box-shadow:0 1px 3px rgb(0 0 0/.14)}
+.chip{font-size:12px;font-weight:650;color:var(--accent-ink);background:var(--accent-soft);padding:4px 10px;border-radius:999px;white-space:nowrap;font-variant-numeric:tabular-nums}
+.prompt{font-family:var(--font-display);font-size:clamp(23px,2.1vw,31px);line-height:1.22;letter-spacing:-.022em;font-weight:680;margin:8px 0 12px;text-wrap:balance}
+.rowlabel{display:flex;align-items:center;gap:10px;min-height:28px;margin-bottom:5px;font-size:13px;font-weight:600;color:var(--ink-2)}
+.rowlabel>:first-child{margin-right:auto}
+.quiet{font-size:12px;font-weight:500;color:var(--muted)}
+.bank-label{margin-top:8px}
+.link{border:0;background:none;color:var(--accent-ink);padding:5px 8px;border-radius:8px;font-size:13px;font-weight:600}
+.link:hover:not(:disabled){background:var(--accent-soft)}
+.answer{min-height:74px;border:1.5px dashed var(--line-strong);border-radius:16px;display:flex;flex-wrap:wrap;gap:8px;align-content:center;align-items:center;padding:10px;background:var(--surface-2);transition:border-color .15s,background .15s}
+.answer:has(.word){border-style:solid;border-color:var(--accent-line)}
+.answer.over,.bank.over{border-color:var(--accent);border-style:dashed;background:var(--accent-soft)}
+.answer.solved{border-color:var(--ok-line);background:var(--ok-soft)}
+.placeholder{color:var(--muted);font-size:14px;pointer-events:none}
+.bank{display:flex;gap:8px;flex-wrap:wrap;align-content:flex-start;min-height:56px;padding:6px 8px;margin:0 -8px;border:1.5px solid transparent;border-radius:16px}
+.word{border:1px solid var(--line-strong);border-radius:12px;background:var(--surface);color:var(--ink);padding:8px 14px;font-size:18px;font-weight:550;line-height:1.25;box-shadow:0 3px 0 var(--key);user-select:none;touch-action:manipulation;transition:transform .1s,box-shadow .1s,border-color .15s,background .15s}
+button.word:hover:not(:disabled){transform:translateY(-2px);box-shadow:0 5px 0 var(--key);border-color:var(--accent-line)}
+button.word:active:not(:disabled){transform:translateY(2px);box-shadow:0 1px 0 var(--key)}
+.word:disabled{opacity:.4}
+.answer .word{background:var(--accent-soft);border-color:var(--accent-line);color:var(--accent-ink);box-shadow:0 3px 0 var(--accent-line)}
+.answer .word:disabled{opacity:1}
+.word.selected{outline:2px solid var(--accent);outline-offset:2px}
+.word.correct{background:var(--ok-soft);color:var(--ok);border-color:var(--ok-line);box-shadow:0 3px 0 var(--ok-line)}
+.word.wrong{background:var(--warn-soft);color:var(--warn);border-color:var(--warn-line);box-shadow:0 3px 0 var(--warn-line)}
+.word.mini{padding:4px 10px;font-size:15px;border-radius:10px;box-shadow:none}
+.word.dragging{opacity:.3}
+.word.pop{animation:pop .18s ease-out}
+@keyframes pop{from{transform:scale(.86);opacity:.4}}
+.reorder{display:flex;gap:4px;align-items:center;font-size:12px;color:var(--muted);transition:opacity .15s}
+.reorder:has(#remove:disabled){opacity:.5}
+.reorder button{display:grid;place-items:center;width:28px;height:26px;padding:0;background:var(--surface);border:1px solid var(--line);border-radius:8px;color:var(--ink-2)}
+.reorder button:hover:not(:disabled){background:var(--surface-2);border-color:var(--line-strong)}
+.reorder .ic{width:14px;height:14px}
+#selectedLabel{overflow:hidden;text-overflow:ellipsis;max-width:110px;white-space:nowrap;font-weight:650;color:var(--accent-ink);margin-right:2px}
+.typed input{display:block;width:100%;border:1.5px solid var(--line-strong);border-radius:14px;background:var(--surface-2);color:var(--ink);padding:12px 15px;font-size:20px;font-weight:550;letter-spacing:-.01em;transition:border-color .15s,box-shadow .15s}
+.typed input:focus{outline:none;border-color:var(--accent);box-shadow:0 0 0 4px var(--accent-soft)}
+.typed input::placeholder{color:var(--muted);font-weight:400;font-size:15px;letter-spacing:0}
+.typed input:disabled{opacity:.6}
+.typed-marks{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
+.typed-marks:empty{display:none}
+.task-panel[data-input=typing] :is(#answer,#reorder,#bank-zone),.task-panel[data-input=tiles] #typed-wrap,.task-panel.solved :is(#reorder,#bank-zone){display:none}
+
+/* Feedback: a short line while solving, an expanded explanation once solved */
+.feedback{border-radius:14px;padding:9px 14px;margin:10px 0 0;font-size:14px;line-height:1.45;background:var(--accent-soft);color:var(--ink-2);border:1px solid var(--accent-line)}
+.feedback.ok{background:var(--ok-soft);color:var(--ok);border-color:var(--ok-line)}
+.feedback.warn{background:var(--warn-soft);color:var(--warn);border-color:var(--warn-line)}
+.feedback:empty{display:none}
+.feedback strong{margin-right:6px}
+.feedback .explanation{display:inline}
+.task-panel.solved .feedback{padding:14px 16px;font-size:15px;line-height:1.55;margin-top:12px}
+.task-panel.solved .feedback strong{display:block;font-family:var(--font-display);font-size:19px;letter-spacing:-.01em;margin:0 0 4px}
+.task-panel.solved .feedback .explanation{display:block}
+
+/* Buttons */
+.controls{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border-radius:12px;padding:10px 16px;font-size:14px;font-weight:620;line-height:1.3;white-space:nowrap;transition:transform .1s,background .15s,border-color .15s,filter .15s,box-shadow .15s}
+.btn:active:not(:disabled){transform:translateY(1px)}
+.primary{border:0;background:var(--btn);color:var(--on-btn);box-shadow:0 10px 20px -10px var(--accent),inset 0 1px 0 rgb(255 255 255/.22)}
+.primary:hover:not(:disabled){filter:brightness(1.08)}
+.primary:disabled{box-shadow:none}
+.btn.live,.btn.live:hover:not(:disabled){border:1px solid var(--danger-strong);background:var(--danger-strong);color:#fff;box-shadow:0 10px 20px -10px var(--danger-strong)}
+.btn.live .ic{color:#fff!important}
+.secondary{border:1px solid var(--line-strong);background:var(--surface);color:var(--ink-2)}
+.secondary:hover:not(:disabled){background:var(--surface-2);border-color:var(--accent-line);color:var(--ink)}
+.ghost{border:1px solid transparent;background:transparent;color:var(--muted)}
+.ghost:hover:not(:disabled){background:var(--surface-3);color:var(--ink)}
+.task-footer{margin-top:auto;padding-top:12px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:8px 12px}
+.task-actions{flex-wrap:nowrap}
+.task-actions .primary{order:-1}
+.instructions{font-size:12px;color:var(--muted);position:relative;flex-shrink:0;margin-left:auto}
+summary{cursor:pointer;border-radius:6px}
+.instructions summary{white-space:nowrap}
+.instructions p,.voice-details .details-content{position:absolute;bottom:28px;max-height:min(64vh,430px);overflow:auto;margin:0;background:var(--surface);color:var(--ink-2);border:1px solid var(--line-strong);padding:12px 14px;border-radius:14px;box-shadow:var(--pop);z-index:3;line-height:1.5}
+.instructions p{right:0;width:min(350px,calc(100vw - 64px))}
+kbd{font:600 11px/1 var(--font);padding:2px 5px;border-radius:5px;border:1px solid var(--line-strong);background:var(--surface-2);color:var(--ink-2)}
+
+/* Practice panel */
+.practice-empty{margin:auto;max-width:340px;text-align:center;color:var(--muted);font-size:14px;line-height:1.6;padding:26px}
+.practice-empty strong{display:block;font-family:var(--font-display);font-size:19px;letter-spacing:-.01em;color:var(--ink);margin:16px 0 6px}
+.empty-art{display:flex;align-items:center;justify-content:center;gap:10px;height:60px}
+.empty-art span{display:block;padding:6px 11px;border-radius:10px;border:1px solid var(--accent-line);background:var(--accent-soft);color:var(--accent-ink);font-weight:650;font-size:14px;box-shadow:0 3px 0 var(--accent-line)}
+.empty-art .ic{color:var(--muted)}
+.eq{display:flex;align-items:center;gap:4px;height:44px}
+.eq i{width:5px;border-radius:3px;background:linear-gradient(var(--accent-2),var(--accent));animation:eq 1.3s ease-in-out infinite}
+.eq i:nth-child(1){height:30%;animation-delay:-.2s}.eq i:nth-child(2){height:70%;animation-delay:-.5s}.eq i:nth-child(3){height:100%;animation-delay:-.9s}.eq i:nth-child(4){height:55%;animation-delay:-.35s}.eq i:nth-child(5){height:35%;animation-delay:-.7s}
+@keyframes eq{50%{transform:scaleY(.45)}}
+.practice-panel:has(.voice-panel:not(.hidden)) .practice-empty{display:none}
+
+/* Voice practice */
+.voice-panel{flex:1;min-height:0;display:flex;flex-direction:column;gap:9px}
+.voice-panel>*{flex-shrink:0}
+.voice-panel .btn{padding:8px 13px;font-size:13.5px}
+.voice-panel .btn.small{padding:5px 10px;font-size:12.5px;border-radius:10px;gap:6px}
+.voice-panel .btn.small .ic{width:15px;height:15px}
+.voice-panel .btn.square{padding:8px}
+.voice-panel .btn.small.square{padding:5px 6px}
+.sample{border-radius:16px;padding:12px 14px;background:linear-gradient(135deg,var(--accent-soft),var(--surface-2));border:1px solid var(--accent-line)}
+.voice-target{font-family:var(--font-display);font-size:clamp(20px,1.6vw,24px);font-weight:680;letter-spacing:-.015em;color:var(--accent-ink);line-height:1.25;overflow-wrap:anywhere;margin:4px 0 10px}
+.statusbar{display:flex;align-items:center;gap:10px;min-height:36px;padding:3px 4px 3px 12px;border-radius:12px;background:var(--surface-2);border:1px solid var(--line)}
+.statusbar .dot{width:9px;height:9px;flex:none;border-radius:50%;background:var(--line-strong)}
+.voice-status{flex:1;min-width:0;font-size:13px;line-height:1.3;color:var(--ink-2);overflow-wrap:anywhere}
+.voice-panel .stop{border:1px solid var(--danger-line);background:var(--danger-soft);color:var(--danger);padding:5px 11px;font-size:12.5px;border-radius:9px}
+.voice-panel .stop:disabled{border-color:var(--line);background:transparent;color:var(--muted)}
+.stop .ic{width:13px;height:13px}
+.voice-panel[data-state=speech] .dot,.voice-panel[data-state=playback] .dot{background:var(--accent)}
+.voice-panel[data-state=monitor] .dot,.voice-panel[data-state=calibrate] .dot{background:var(--ok-strong)}
+.voice-panel[data-state=permission] .dot{background:var(--warn-strong)}
+.voice-panel[data-state^=record] .dot,.voice-panel[data-state^=recognition] .dot{background:var(--danger-strong)}
+.voice-panel:not([data-state=idle]) .dot{animation:pulse 1.2s ease-in-out infinite}
+.voice-panel[data-state^=record] .statusbar,.voice-panel[data-state^=recognition] .statusbar{border-color:var(--danger-line);background:var(--danger-soft)}
+@keyframes pulse{50%{transform:scale(1.6);opacity:.45}}
+
+/* Microphone console: level meter and software gain, one row each */
+.mic-console{display:grid;grid-template-columns:auto minmax(0,1fr) auto auto;align-items:center;gap:6px 10px;border:1px solid var(--line);border-radius:14px;padding:8px 10px 8px 12px;background:var(--surface-2)}
+.mic-title{display:flex;align-items:center;gap:6px;font-size:12.5px;font-weight:650;color:var(--ink-2)}
+.mic-title .ic{width:15px;height:15px;color:var(--accent)}
+.mic-console output{min-width:94px;font-size:12.5px;font-weight:700;font-variant-numeric:tabular-nums;text-align:right;color:var(--ink-2);white-space:nowrap}
+#voice-gain-value{color:var(--accent-ink)}
+.mic-btns{display:flex;gap:6px;justify-content:flex-end}
+.meter{position:relative;height:12px;border-radius:4px;overflow:hidden;--level:0%;--peak:0%;--leds:repeating-linear-gradient(90deg,#000 0 5px,transparent 5px 7px)}
+.meter::before,.meter-fill{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#22b866 0,#22b866 76%,#e7b416 83%,#f08c1a 92%,#e5484d 95.5%,#e5484d 100%);-webkit-mask:var(--leds);mask:var(--leds)}
+.meter::before{opacity:.16}
+.meter-fill{clip-path:inset(0 calc(100% - var(--level)) 0 0)}
+.meter-peak{position:absolute;top:0;bottom:0;left:clamp(0px,calc(var(--peak) - 3px),calc(100% - 3px));width:3px;border-radius:2px;background:var(--ink);opacity:0;transition:opacity .2s}
+.meter.live .meter-peak{opacity:.85}
+.meter.clip{box-shadow:0 0 0 2px var(--danger-strong)}
+.meter.clip+output{color:var(--danger)}
+.mic-select{grid-column:2/-1;width:100%;max-width:none;padding:4px 8px;font-size:12.5px;border-radius:9px;border-color:var(--line);text-overflow:ellipsis}
+.mic-select:disabled{opacity:.55}
+.mic-verdict{grid-column:2/-1;margin:-2px 0 0;font-size:11.5px;line-height:1.3;color:var(--muted);min-height:15px}
+.mic-verdict[data-tone=good]{color:var(--ok);font-weight:600}
+.mic-verdict[data-tone=warn]{color:var(--warn);font-weight:600}
+.mic-verdict[data-tone=bad]{color:var(--danger);font-weight:700}
+.mic-console input[type=range]{-webkit-appearance:none;appearance:none;display:block;width:100%;height:22px;margin:0;background:transparent;cursor:pointer;--p:.111;--track:linear-gradient(90deg,var(--accent),var(--accent-2)) 0/calc(9px + (100% - 18px)*var(--p)) 100% no-repeat,var(--surface-3)}
+.mic-console input[type=range]:disabled{opacity:.5;cursor:default}
+.mic-console input[type=range]::-webkit-slider-runnable-track{height:6px;border-radius:999px;background:var(--track)}
+.mic-console input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;appearance:none;width:18px;height:18px;margin-top:-6px;border-radius:50%;background:#fff;border:2px solid var(--accent);box-shadow:0 2px 6px rgb(0 0 0/.25);transition:transform .1s}
+.mic-console input[type=range]:active::-webkit-slider-thumb{transform:scale(1.12)}
+.mic-console input[type=range]::-moz-range-track{height:6px;border-radius:999px;background:var(--track)}
+.mic-console input[type=range]::-moz-range-thumb{width:14px;height:14px;border-radius:50%;background:#fff;border:2px solid var(--accent);box-shadow:0 2px 6px rgb(0 0 0/.25)}
+
+.voice-consent{display:flex;align-items:center;gap:8px;padding:0 2px;font-size:12px;line-height:1.3;color:var(--muted)}
+.voice-consent input{margin:0;width:16px;height:16px;flex:none;accent-color:var(--accent)}
+.mic-actions{display:flex;flex-wrap:wrap;gap:8px}
+.mic-actions .primary{flex:1 1 auto}
+#voice-results{overflow:auto;overscroll-behavior:contain;max-height:128px;border:1px solid var(--line);border-radius:12px;padding:7px 11px;font-size:13px}
+#voice-results:empty{display:none}
+#voice-results p{margin:2px 0}
+.voice-good{color:var(--ok);font-weight:650}
+.voice-warning{color:var(--warn);font-weight:650}
+.voice-comparison{display:flex;gap:5px;flex-wrap:wrap;margin:6px 0 4px}
+.voice-chip{font-size:12.5px;font-weight:600;border-radius:8px;padding:3px 8px;border:1px solid}
+.voice-chip.match{background:var(--ok-soft);color:var(--ok);border-color:var(--ok-line)}
+.voice-chip.mismatch{background:var(--warn-soft);color:var(--warn);border-color:var(--warn-line)}
+.voice-fine{font-size:12px;color:var(--muted);line-height:1.45}
+.consent-row{display:flex;align-items:center;gap:10px}
+.consent-row .voice-consent{flex:1;min-width:0}
+.voice-details{flex:none}
+.voice-details summary{list-style:none;display:grid;place-items:center;width:24px;height:24px;border-radius:8px;color:var(--muted)}
+.voice-details summary::-webkit-details-marker{display:none}
+.voice-details summary:hover,.voice-details[open] summary{background:var(--surface-3);color:var(--ink)}
+.voice-details .details-content{position:fixed;right:28px;bottom:56px;width:min(480px,calc(100vw - 32px))}
+.voice-panel>#voice-results{flex-shrink:1;min-height:58px}
+.voice-details p{margin:0 0 7px}
+.voice-details p:last-child{margin:0}
+.voice-support{margin:0}
+.voice-support:empty{display:none}
+
+/* Round summary */
+#summary{display:none;text-align:center;padding:36px 20px}
+#summary h2{font-family:var(--font-display);font-size:28px;letter-spacing:-.02em;margin:18px 0 6px;text-wrap:balance}
+#summary p{color:var(--ink-2);margin:0 0 20px}
+.ring{--p:0;width:168px;height:168px;margin:18px auto 0;border-radius:50%;display:grid;place-items:center;background:conic-gradient(var(--accent) 0,var(--accent-2) calc(var(--p)*1%),var(--surface-3) 0)}
+.ring .big{width:136px;height:136px;border-radius:50%;background:var(--surface);display:grid;place-items:center;font-family:var(--font-display);font-size:38px;font-weight:780;letter-spacing:-.03em;color:var(--accent-ink);font-variant-numeric:tabular-nums}
+
+/* Footer */
+.bottom{display:flex;justify-content:space-between;align-items:center;gap:14px;margin-top:10px;font-size:12px;color:var(--muted)}
+.bottom label{display:flex;gap:10px;align-items:center;white-space:nowrap;min-width:0}
+.history{display:flex;align-items:center;gap:6px;margin-left:auto}
+.history label{gap:7px;color:var(--ink-2)}
+.history input{margin:0;width:15px;height:15px;accent-color:var(--accent)}
+.history .link{font-size:12px;padding:4px 8px}
+.history .link.armed{color:var(--danger);background:var(--danger-soft)}
+select{border:1px solid var(--line-strong);padding:7px 10px;border-radius:10px;background:var(--surface);color:var(--ink-2);min-width:0;max-width:min(34vw,460px)}
+
+*{scrollbar-width:thin;scrollbar-color:var(--line-strong) transparent}
+
+/* Desktop: the whole trainer fits one screen. Panels can still scroll on their own if a window is unusually small. */
+@media(min-width:1024px) and (min-height:560px){
+  body{height:100vh;height:100dvh;display:flex;flex-direction:column;overflow:hidden}
+  .appbar{flex:0 0 auto}
+  main{min-height:0;flex:1;display:flex;flex-direction:column}
+  .track,.bottom{flex-shrink:0}
+  #exercise{flex:1;min-height:0}
+  .workspace{height:100%;grid-template-rows:minmax(0,1fr)}
+  .task-body{flex:1;overflow:auto;overscroll-behavior:contain;margin-right:-12px;padding-right:12px}
+  .practice-panel{overflow:auto;overscroll-behavior:contain}
+  #summary{flex:1;overflow:auto}
+}
+@media(min-width:1024px) and (max-height:720px){
+  .appbar{padding-top:8px;padding-bottom:4px}
+  .track{margin-bottom:2px}
+  .card{padding:14px 16px}
+  .prompt{font-size:23px;margin:5px 0 8px}
+  .answer{min-height:64px;padding:8px}
+  .bank{min-height:48px}
+  .bank-label{margin-top:4px}
+  .word{padding:6px 12px;font-size:17px}
+  .typed input{padding:10px 14px;font-size:19px}
+  .task-footer{padding-top:8px}
+  .voice-panel{gap:7px}
+  .sample{padding:9px 12px}
+  .voice-target{font-size:20px;margin:2px 0 8px}
+  .bottom{margin-top:6px}
+  main{padding-bottom:8px}
+}
+@media(max-width:1280px){.bottom-note{display:none}}
+@media(max-width:1180px){h1{display:none}.mic-title span{display:none}.mic-console output{min-width:0}}
+@media(max-width:1023px){
+  .appbar{padding:14px 18px 10px;flex-wrap:wrap;row-gap:10px}
+  main{padding:0 18px 22px}
+  .workspace{grid-template-columns:minmax(0,1fr)}
+  .task-panel{min-height:340px}
+  .practice-empty{padding:8px;margin:0 auto}
+  .empty-art{display:none}
+  .practice-empty strong{margin-top:0}
+  .voice-details .details-content{right:16px;bottom:16px}
+  .bottom{flex-wrap:wrap}
+  select{max-width:calc(100vw - 170px)}
+}
+@media(max-width:620px){
+  .appbar{padding:12px 12px 8px;gap:10px}
+  .brand{font-size:17px}
+  .icon-btn{order:1;margin-left:auto}
+  .spacer{order:2;flex-basis:100%;height:0}
+  .levels{order:3}
+  .stats{order:4;margin-left:auto;gap:12px}
+  .stat{font-size:11px}
+  .stat b{font-size:18px}
+  main{padding:0 12px 20px}
+  .card{padding:16px 14px;border-radius:18px}
+  .seg{height:16px;padding:6px 0}
+  .seg::before{height:4px}
+  .track{gap:2px}
+  .round{flex-wrap:wrap}
+  .prompt{font-size:22px}
+  .word{font-size:17px;padding:8px 12px}
+  .task-actions{flex-wrap:wrap;width:100%}
+  .task-actions .primary{flex:1 1 100%}
+  .instructions p{right:auto;left:0}
+  .voice-panel .controls .btn,.mic-actions .btn{flex:1 1 auto}
+  .mic-actions .btn.square{flex:0 0 auto}
+  .voice-consent{align-items:flex-start}
+  .bottom label{font-size:11px}
+  select{max-width:calc(100vw - 145px);font-size:12px}
+}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<svg class="sprite" aria-hidden="true" focusable="false">
+  <symbol id="i-play" viewBox="0 0 24 24"><path d="M8 5.5v13l11-6.5z" fill="currentColor"/></symbol>
+  <symbol id="i-slow" viewBox="0 0 24 24"><path d="M4.5 17a8.5 8.5 0 1 1 15 0"/><path d="M12 13.5 8 8.5"/><circle cx="12" cy="13.5" r="1.2" fill="currentColor"/></symbol>
+  <symbol id="i-stop" viewBox="0 0 24 24"><rect x="6" y="6" width="12" height="12" rx="2.5" fill="currentColor"/></symbol>
+  <symbol id="i-mic" viewBox="0 0 24 24"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5.5 11.5a6.5 6.5 0 0 0 13 0M12 18v3"/></symbol>
+  <symbol id="i-rec" viewBox="0 0 24 24"><circle cx="12" cy="12" r="6" fill="currentColor" stroke="none"/></symbol>
+  <symbol id="i-trash" viewBox="0 0 24 24"><path d="M4.5 7h15M9.5 7V4.5h5V7M6.5 7l1 12.5h9l1-12.5"/></symbol>
+  <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2.5V5M12 19v2.5M2.5 12H5M19 12h2.5M5.3 5.3l1.8 1.8M16.9 16.9l1.8 1.8M5.3 18.7l1.8-1.8M16.9 7.1l1.8-1.8"/></symbol>
+  <symbol id="i-moon" viewBox="0 0 24 24"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4 8.5 8.5 0 1 0 20 14.5z"/></symbol>
+  <symbol id="i-bulb" viewBox="0 0 24 24"><path d="M9.5 18h5M10.5 21h3M12 3a6 6 0 0 0-3.6 10.8c.6.5 1 1.2 1.1 2.2h5c.1-1 .5-1.7 1.1-2.2A6 6 0 0 0 12 3z"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.5 9.5 17 19 7.5"/></symbol>
+  <symbol id="i-next" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+  <symbol id="i-left" viewBox="0 0 24 24"><path d="M19 12H5M11 6l-6 6 6 6"/></symbol>
+  <symbol id="i-x" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></symbol>
+  <symbol id="i-level" viewBox="0 0 24 24"><path d="M5 19v-5M10 19V9M15 19v-7M20 19V5"/></symbol>
+  <symbol id="i-wave" viewBox="0 0 24 24"><path d="M4 10v4M8 6v12M12 3v18M16 7v10M20 10v4"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h13M14 8l4 4-4 4"/></symbol>
+  <symbol id="i-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M12 11v5M12 8h.01"/></symbol>
+  <symbol id="i-tiles" viewBox="0 0 24 24"><rect x="3" y="8" width="8" height="8" rx="2.2"/><rect x="13" y="8" width="8" height="8" rx="2.2"/></symbol>
+  <symbol id="i-keyboard" viewBox="0 0 24 24"><rect x="3" y="6" width="18" height="12" rx="2.5"/><path d="M7 10h.01M11 10h.01M15 10h.01M8 14h8"/></symbol>
+  <symbol id="i-gain" viewBox="0 0 24 24"><path d="M4 9.5v5h3.5l4.5 4v-13l-4.5 4zM16 9v6M19 12h-6"/></symbol>
+  <symbol id="i-auto" viewBox="0 0 24 24"><path d="M12 4l1.9 4.6 4.6 1.9-4.6 1.9L12 17l-1.9-4.6-4.6-1.9 4.6-1.9zM18.5 16.5v3M17 18h3"/></symbol>
+  <symbol id="i-reset" viewBox="0 0 24 24"><path d="M4.5 12a7.5 7.5 0 1 0 2.4-5.5M4.5 5v4h4"/></symbol>
+</svg>
+
+<header class="appbar">
+  <div class="brand"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 5h16v11H11l-5 4v-4H4z"/></svg></span><span>Phrase <em>by phrase.</em></span></div>
+  <h1>Знаю слова. Собираю мысль.</h1>
+  <div class="spacer"></div>
+  <div class="levels" id="levels" role="group" aria-label="Уровень сложности" aria-describedby="level-help">
+    <button type="button" data-level="A2" aria-pressed="true" title="A2 · Базовый">A2</button>
+    <button type="button" data-level="B1" aria-pressed="false" title="B1 · Средний">B1</button>
+    <button type="button" data-level="B2" aria-pressed="false" title="B2 · Выше среднего">B2</button>
+    <button type="button" data-level="C1" aria-pressed="false" title="C1 · Advanced">C1</button>
+  </div>
+  <div class="stats"><div class="stat"><b id="score">0</b>самостоятельно</div><div class="stat"><b id="seen">0</b>разобрано</div></div>
+  <button type="button" class="icon-btn" id="theme" aria-label="Сменить тему"><svg class="ic theme-moon" aria-hidden="true"><use href="#i-moon"/></svg><svg class="ic theme-sun" aria-hidden="true"><use href="#i-sun"/></svg></button>
+</header>
+
+<main>
+<div class="track" id="track" aria-hidden="true"></div>
+<section id="exercise"><div class="workspace">
+<section class="card task-panel" id="task" data-input="tiles" aria-label="Соберите фразу">
+  <div class="task-body">
+    <div class="round"><span class="langs" id="langs" role="group" aria-label="Язык тренировки" data-lang="en"><button type="button" data-lang="en" aria-pressed="true">Английский</button><button type="button" data-lang="de" aria-pressed="false">Немецкий</button></span><span class="round-tools">
+      <span class="modes" id="modes" role="group" aria-label="Способ ответа"><button type="button" data-mode="tiles" aria-pressed="true" aria-label="Плитки" title="Собирать фразу из готовых слов"><svg class="ic" aria-hidden="true"><use href="#i-tiles"/></svg><span>Плитки</span></button><button type="button" data-mode="typing" aria-pressed="false" aria-label="Клавиатура" title="Набирать фразу с клавиатуры, без набора слов"><svg class="ic" aria-hidden="true"><use href="#i-keyboard"/></svg><span>Клавиатура</span></button></span>
+      <span class="chip" id="counter"></span></span></div>
+    <div class="prompt" id="prompt"></div>
+    <div class="rowlabel"><span>Ваша фраза</span><span class="reorder" id="reorder"><span id="selectedLabel"></span><button type="button" id="left" aria-label="Переместить выбранное слово влево" title="Левее"><svg class="ic" aria-hidden="true"><use href="#i-left"/></svg></button><button type="button" id="right" aria-label="Переместить выбранное слово вправо" title="Правее"><svg class="ic" aria-hidden="true"><use href="#i-next"/></svg></button><button type="button" id="remove" aria-label="Убрать выбранное слово" title="Убрать"><svg class="ic" aria-hidden="true"><use href="#i-x"/></svg></button></span><button type="button" class="link" id="clear">Начать заново</button></div>
+    <div class="answer" id="answer" role="group" aria-label="Собранная фраза"></div>
+    <div class="typed" id="typed-wrap"><input type="text" id="typed" lang="en" autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false" placeholder="Наберите фразу по-английски и нажмите Enter" aria-label="Ваша фраза по-английски"><div class="typed-marks" id="typed-marks"></div></div>
+    <div id="feedback" class="feedback" role="status" aria-live="polite"></div>
+    <div id="bank-zone"><div class="rowlabel bank-label"><span>Набор слов</span><span class="quiet">Есть лишние слова</span></div>
+    <div class="bank" id="bank" role="group" aria-label="Доступные слова"></div></div>
+  </div>
+  <div class="task-footer">
+    <div class="controls task-actions">
+      <button type="button" class="btn primary" id="check"><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg>Проверить фразу</button>
+      <button type="button" class="btn secondary" id="hint"><svg class="ic" aria-hidden="true"><use href="#i-bulb"/></svg>Подсказка</button>
+      <button type="button" class="btn ghost" id="reveal">Показать ответ</button>
+      <button type="button" class="btn primary hidden" id="next">Следующая<svg class="ic" aria-hidden="true"><use href="#i-next"/></svg></button>
+    </div>
+    <details class="instructions"><summary>Как работать</summary><p><span id="level-help">У каждого уровня свой раунд и свой счёт. С галочкой «Сохранять историю» (внизу страницы) они запоминаются в этом браузере и продолжаются с того же места; без неё смена уровня или закрытие страницы начинают раунд заново. Уровни ориентировочные: это тренировка фраз, а не сертификационный тест.</span> «Плитки»: нажимайте на слова или перетаскивайте их в строку ответа; порядок в строке меняется мышкой или стрелками у выбранного слова. «Клавиатура»: наберите фразу сами, без набора слов; регистр и знаки препинания не важны, сокращения пишите как в разговорной речи (I'm, don't); немецкие ä, ö, ü, ß можно набирать как ae, oe, ue, ss. Переключатель «Английский / Немецкий» меняет язык: у каждого свои фразы и своя история. <kbd>Enter</kbd> — проверить или перейти дальше, <kbd>Backspace</kbd> — убрать последнюю плитку. Полоска сверху — фразы раунда: по ней можно перейти к любой.</p></details>
+  </div>
+</section>
+
+<aside class="card practice-panel" aria-label="Разговорная практика">
+<div class="practice-empty"><div class="empty-art" aria-hidden="true"><span>Aa</span><svg class="ic"><use href="#i-arrow"/></svg><div class="eq"><i></i><i></i><i></i><i></i><i></i></div></div><strong>От фразы к разговору</strong>Соберите ответ слева и проверьте его.<br>Здесь появятся озвучка, запись голоса и сравнение с образцом.</div>
+<section id="voice-panel" class="voice-panel hidden" aria-labelledby="voice-title" data-state="idle">
+  <div class="sample">
+    <h2 id="voice-title" class="eyebrow">Послушайте и повторите</h2>
+    <div id="voice-target" class="voice-target" lang="en"></div>
+    <div class="controls">
+      <button type="button" class="btn secondary" id="voice-listen"><svg class="ic" aria-hidden="true"><use href="#i-play"/></svg><span>Слушать</span></button>
+      <button type="button" class="btn secondary" id="voice-slow" title="Та же фраза целиком, в пониженном темпе"><svg class="ic" aria-hidden="true"><use href="#i-slow"/></svg><span>Медленно</span></button>
+    </div>
+  </div>
+  <div class="statusbar"><span class="dot" aria-hidden="true"></span><div id="voice-status" class="voice-status" role="status" aria-live="polite"></div><button type="button" class="btn stop" id="voice-stop" disabled><svg class="ic" aria-hidden="true"><use href="#i-stop"/></svg><span>Стоп</span></button></div>
+  <div class="mic-console">
+    <label class="mic-title" for="voice-device"><svg class="ic" aria-hidden="true"><use href="#i-mic"/></svg><span>Микрофон</span></label>
+    <select id="voice-device" class="mic-select" aria-label="Микрофон" title="Какой микрофон использовать. Названия появляются после разрешения на микрофон."><option value="">Системный по умолчанию</option></select>
+    <span class="mic-title"><svg class="ic" aria-hidden="true"><use href="#i-level"/></svg><span>Уровень</span></span>
+    <div class="meter" id="voice-meter" role="meter" aria-label="Уровень сигнала микрофона, дБ" aria-valuemin="-60" aria-valuemax="0" aria-valuenow="-60"><i class="meter-fill"></i><i class="meter-peak"></i></div>
+    <output id="voice-db">— дБ</output>
+    <span class="mic-btns"><button type="button" class="btn secondary small" id="voice-monitor" title="Включить индикатор без записи, чтобы подобрать усиление"><svg class="ic" aria-hidden="true"><use href="#i-wave"/></svg><span>Проверить</span></button></span>
+    <label class="mic-title" for="voice-gain"><svg class="ic" aria-hidden="true"><use href="#i-gain"/></svg><span>Усиление</span></label>
+    <input type="range" id="voice-gain" min="50" max="500" step="10" value="100" aria-label="Усиление микрофона">
+    <output id="voice-gain-value" for="voice-gain">×1</output>
+    <span class="mic-btns"><button type="button" class="btn secondary small" id="voice-auto" title="Скажите фразу — усиление подберётся под ваш голос"><svg class="ic" aria-hidden="true"><use href="#i-auto"/></svg><span>Авто</span></button><button type="button" class="btn secondary small square" id="voice-gain-reset" disabled aria-label="Сбросить усиление до ×1" title="Сбросить усиление до ×1"><svg class="ic" aria-hidden="true"><use href="#i-reset"/></svg></button></span>
+    <p class="mic-verdict" id="voice-meter-hint"></p>
+  </div>
+  <div class="consent-row"><label class="voice-consent"><input type="checkbox" id="voice-consent"><span>Разрешаю распознавание речи: браузер может отправлять аудио своему сервису.</span></label>
+    <details class="voice-details"><summary aria-label="О голосе, точности и приватности" title="О голосе, точности и приватности"><svg class="ic" aria-hidden="true"><use href="#i-info"/></svg></summary><div class="details-content">
+      <p class="voice-fine">Образец: голос браузера или устройства для выбранного языка (английский или немецкий). Некоторые голоса могут требовать интернет; если немецкого голоса нет, его можно добавить в настройках речи Windows. «Медленно» читает ту же фразу целиком в пониженном темпе; если голос браузера не умеет менять темп, она прозвучит как обычно.</p>
+      <p class="voice-fine">Распознавание запускается только по кнопке и только с вашего согласия; для него нужны микрофон и, возможно, интернет. Согласие и усиление запоминаются на этом устройстве.</p>
+      <p class="voice-fine">Индикатор уровня и усиление работают прямо в браузере. Держите пики в зелёной и жёлтой зоне — в красной звук искажается. «Авто» слушает вас несколько секунд и ставит усиление так, чтобы пики были около −6 дБ. Микрофон можно выбрать вручную — выбор запоминается на этом устройстве; если он отключён, включится системный. Выбранный микрофон и усиление всегда применяются к записи, а к распознаванию — в браузерах, которые принимают обработанный звук (свежие Chrome и Edge).</p>
+      <p class="voice-fine">В сравнении слов: «Нет» — слово не распознано; стрелка — слева образец, справа распознанное слово; «+» — лишнее слово. Это сравнение распознанного текста, а не оценка звуков, ударения или акцента: распознавание может ошибаться, сокращения учитываются с возможными полными формами.</p>
+      <p class="voice-fine">«Произнести и сравнить» заодно записывает эту попытку — её можно сразу прослушать кнопкой «Моя запись»; «Записать» делает запись без распознавания. Приложение запись никуда не отправляет: она остаётся только в памяти вкладки и удаляется при новой записи, смене фразы или закрытии страницы.</p>
+    </div></details>
+  </div>
+  <div class="mic-actions">
+    <button type="button" class="btn primary" id="voice-speak" disabled><svg class="ic" aria-hidden="true"><use href="#i-mic"/></svg><span>Произнести и сравнить</span></button>
+    <button type="button" class="btn secondary" id="voice-record"><svg class="ic" aria-hidden="true" style="color:var(--danger-strong)"><use href="#i-rec"/></svg><span>Записать</span></button>
+    <button type="button" class="btn secondary" id="voice-play" disabled><svg class="ic" aria-hidden="true"><use href="#i-play"/></svg><span>Моя запись</span></button>
+    <button type="button" class="btn ghost square" id="voice-delete" disabled aria-label="Удалить запись" title="Удалить запись"><svg class="ic" aria-hidden="true"><use href="#i-trash"/></svg></button>
+  </div>
+  <div id="voice-results" aria-live="polite" tabindex="0" role="region" aria-label="Результат сравнения слов"></div>
+  <p class="voice-fine voice-support" id="voice-support"></p>
+  <audio id="voice-audio" preload="none" hidden></audio>
+</section>
+</aside>
+</div></section>
+
+<section class="card" id="summary">
+  <div class="eyebrow">Раунд завершён</div>
+  <div class="ring" id="summaryRing"><div class="big" id="summaryScore"></div></div>
+  <h2>Ещё немного ближе к свободной речи</h2>
+  <p id="summaryText"></p>
+  <div class="controls" style="justify-content:center"><button type="button" class="btn primary" id="repeat">Повторить трудные</button><button type="button" class="btn secondary" id="restart">Новый раунд</button></div>
+</section>
+
+<div class="bottom"><label>Перейти к фразе <select id="jump" aria-label="Выбрать упражнение"></select></label>
+  <div class="history"><label title="Прогресс по каждому уровню хранится только в этом браузере"><input type="checkbox" id="keep-history" checked><span>Сохранять историю</span></label><button type="button" class="link" id="clear-history" title="Сбросить счёт и прогресс по всем уровням выбранного языка">Очистить историю</button></div>
+  <span class="bottom-note" id="bottom-note"></span></div>
+</main>
+
+<script id="exercise-data" type="application/json">/*DATA*/</script>
+<script id="exercise-data-de" type="application/json">/*DATA_DE*/</script>
+<script>
+'use strict';
+const $=id=>document.getElementById(id);
+const DATASETS={en:JSON.parse($('exercise-data').textContent),de:JSON.parse($('exercise-data-de').textContent)};
+// One entry per training language: how the interface names it, its speech code and where its history is kept.
+const LANGS={en:{adjective:'английский',inLang:'по-английски',speech:'en-US',historyKey:'ept-history'},de:{adjective:'немецкий',inLang:'по-немецки',speech:'de-DE',historyKey:'ept-history-de'}};
+let lang='en',DATA=DATASETS.en;
+const LEVELS=['A2','B1','B2','C1'];
+const HISTORY_ON='ept-history-on';
+let voice=null,activeLevel='A2',inputMode='tiles',typedShown=[],keepHistory=true,saved={level:'A2',levels:{}};
+let round=[],pos=0,pool=[],picked=[],selected=null,dragging=null,justAdded=null,solved=false,assisted=false,attempts=0,marks=[],hard=new Set(),completed=new Set(),stats={correct:0,seen:0};
+function levelIndices(level=activeLevel){return DATA.map((e,i)=>(e.level||'A2')===level?i:-1).filter(i=>i>=0)}
+function renderJump(){const jump=$('jump');jump.replaceChildren();round.forEach((index,i)=>{const o=document.createElement('option');o.value=index;o.textContent=(i+1)+'. '+DATA[index].ru;jump.append(o)})}
+// The track duplicates the "jump" select for the mouse, so it stays out of the tab order.
+function renderTrack(){const track=$('track');track.replaceChildren();round.forEach((index,i)=>{const b=document.createElement('button');b.type='button';b.className='seg';b.tabIndex=-1;b.title=(i+1)+'. '+DATA[index].ru;b.onclick=()=>{pos=i;load()};track.append(b)})}
+function updateTrack(){const finished=$('summary').style.display==='block';[...$('track').children].forEach((b,i)=>{const index=round[i];b.className='seg'+(completed.has(index)?(hard.has(index)?' assisted':' ok'):'')+(i===pos&&!finished?' current':'')})}
+function recordResult(independent){const index=round[pos];if(!completed.has(index)){completed.add(index);stats.seen++;if(independent&&!hard.has(index))stats.correct++}if(!independent)hard.add(index)}
+// Case and punctuation don't count; German umlauts and ß may also be typed as ae, oe, ue, ss.
+function normalize(s){return s.toLowerCase().replace(/[’‘`]/g,"'").replace(/[.,!?;:"“”„«»()]/g,'').replace(/ä/g,'ae').replace(/ö/g,'oe').replace(/ü/g,'ue').replace(/ß/g,'ss').replace(/\s+/g,' ').trim()}
+function valid(arr,e){return [e.words,...(e.alternatives||[])].some(a=>normalize(a.join(' '))===normalize(arr.join(' ')))}
+function shuffle(a){for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a}
+function current(){return DATA[round[pos]]}
+function message(title,text,type=''){const f=$('feedback');f.className='feedback '+type;f.replaceChildren();const h=document.createElement('strong');h.textContent=title;const p=document.createElement('div');p.className='explanation';p.textContent=text;f.append(h,p)}
+// Called whenever the position or the results change, so it is also where the history is written.
+function updateStats(){$('score').textContent=stats.correct;$('seen').textContent=stats.seen;updateTrack();saveHistory()}
+function load(){voice?.hide();solved=false;assisted=false;attempts=0;picked=[];selected=null;marks=[];typedShown=[];dragging=null;justAdded=null;const e=current();pool=shuffle([...e.words,...e.distractors].map((word,id)=>({word,id})));$('prompt').textContent=e.ru;$('counter').textContent=activeLevel+' · '+(pos+1)+' / '+round.length;$('typed').value='';$('feedback').replaceChildren();$('check').classList.remove('hidden');$('next').classList.add('hidden');$('exercise').style.display='block';$('summary').style.display='none';$('jump').value=round[pos];updateStats();render();if(inputMode==='typing')$('typed').focus({preventScroll:true})}
+function render(){const answer=$('answer'),bank=$('bank'),shown=$('typed-marks'),typing=inputMode==='typing';$('task').dataset.input=inputMode;$('task').classList.toggle('solved',solved);answer.replaceChildren();bank.replaceChildren();shown.replaceChildren();answer.classList.toggle('solved',solved);if(!picked.length){const p=document.createElement('span');p.className='placeholder';p.textContent='Соберите фразу здесь…';answer.append(p)}pool.forEach(t=>{if(!picked.includes(t.id))bank.append(token(t,false))});picked.forEach((id,i)=>answer.append(token(pool.find(t=>t.id===id),true,i)));justAdded=null;typedShown.forEach((word,i)=>{const s=document.createElement('span');s.className='word mini'+(marks[i]?' '+marks[i]:'');s.textContent=word;shown.append(s)});$('typed').disabled=solved;$('check').disabled=solved||(typing?!$('typed').value.trim():!picked.length);$('hint').disabled=solved;$('reveal').disabled=solved;$('clear').disabled=solved;$('left').disabled=solved||selected===null||picked.indexOf(selected)<=0;$('right').disabled=solved||selected===null||picked.indexOf(selected)>=picked.length-1;$('remove').disabled=solved||selected===null;$('selectedLabel').textContent=selected===null?'':pool.find(t=>t.id===selected)?.word||''}
+function token(t,inAnswer,index){const b=document.createElement('button');b.type='button';b.className='word'+(selected===t.id?' selected':'')+(inAnswer&&marks[index]?' '+marks[index]:'')+(inAnswer&&justAdded===t.id?' pop':'');b.textContent=t.word;b.draggable=!solved;b.disabled=solved;b.setAttribute('aria-label',(inAnswer?'Выбрать слово в ответе: ':'Добавить слово: ')+t.word);b.onclick=()=>{if(solved)return;if(inAnswer){selected=t.id}else{picked.push(t.id);selected=t.id;justAdded=t.id;marks=[]}render()};b.ondragstart=ev=>{dragging=t.id;ev.dataTransfer.setData('text/plain',String(t.id));ev.dataTransfer.effectAllowed='move';b.classList.add('dragging')};b.ondragend=()=>{dragging=null;b.classList.remove('dragging');$('answer').classList.remove('over');$('bank').classList.remove('over')};if(inAnswer){b.ondragover=ev=>{ev.preventDefault();ev.stopPropagation()};b.ondrop=ev=>{ev.preventDefault();ev.stopPropagation();if(solved||dragging===null||dragging===t.id)return;const before=ev.clientX<b.getBoundingClientRect().left+b.offsetWidth/2;picked=picked.filter(id=>id!==dragging);let at=picked.indexOf(t.id)+(before?0:1);picked.splice(at,0,dragging);selected=dragging;dragging=null;marks=[];render()}}return b}
+for(const id of ['answer','bank']){$(id).ondragover=e=>{e.preventDefault();$(id).classList.add('over')};$(id).ondragleave=()=>$(id).classList.remove('over');$(id).ondrop=e=>{e.preventDefault();$(id).classList.remove('over');if(solved||dragging===null)return;picked=picked.filter(x=>x!==dragging);if(id==='answer')picked.push(dragging);selected=id==='answer'?dragging:null;dragging=null;marks=[];render()}}
+function move(delta){let i=picked.indexOf(selected),j=i+delta;if(solved||i<0||j<0||j>=picked.length)return;[picked[i],picked[j]]=[picked[j],picked[i]];marks=[];render()}
+$('left').onclick=()=>move(-1);$('right').onclick=()=>move(1);$('remove').onclick=()=>{picked=picked.filter(i=>i!==selected);selected=null;marks=[];render()};$('clear').onclick=()=>{picked=[];selected=null;marks=[];typedShown=[];$('typed').value='';$('feedback').replaceChildren();render();if(inputMode==='typing')$('typed').focus({preventScroll:true})};
+// Shows the solved state and hands the phrase to voice practice. In typing mode the input is disabled now, so focus moves to "next" and Enter keeps working.
+function finish(text){$('check').classList.add('hidden');$('next').classList.remove('hidden');updateStats();render();voice?.show(text);if(inputMode==='typing')$('next').focus({preventScroll:true})}
+$('check').onclick=()=>{if(solved)return;const typing=inputMode==='typing',typedPairs=typing?$('typed').value.trim().split(/\s+/).map(w=>[w.replace(/[.,!?;:"“”„«»()]/g,''),normalize(w)]).filter(p=>p[1]):[],words=typing?typedPairs.map(p=>p[1]):picked.map(id=>pool.find(t=>t.id===id).word);if(!words.length)return;attempts++;const e=current(),variants=[e.words,...(e.alternatives||[])],match=variants.find(a=>normalize(a.join(' '))===normalize(words.join(' ')));if(match){solved=true;selected=null;recordResult(!assisted&&attempts===1);marks=match.map(()=> 'correct');typedShown=match;message('Да, так говорят!','«'+match.join(' ')+'». '+e.tip,'ok');finish(match.join(' '))}else{hard.add(round[pos]);const best=[...variants].sort((a,b)=>b.filter((w,i)=>normalize(w)===normalize(words[i]||'')).length-a.filter((w,i)=>normalize(w)===normalize(words[i]||'')).length)[0];marks=words.map((w,i)=>normalize(w)===normalize(best[i]||'')?'correct':'wrong');typedShown=typing?typedPairs.map(p=>p[0]):[];message('Пока не совпало с разговорным вариантом.',(typing?'Зелёные слова стоят на своих местах. Проверьте слова, их порядок и написание. ':'Зелёные слова стоят на своих местах. Проверьте порядок и лишние слова. ')+(words.length<best.length?'Похоже, фраза ещё не закончена.':''),'warn');render();saveHistory()}};
+$('hint').onclick=()=>{assisted=true;hard.add(round[pos]);message('Подсказка.',current().tip+' Начало: '+current().words.slice(0,2).join(' ')+'…');saveHistory()};
+$('reveal').onclick=()=>{if(solved)return;assisted=true;solved=true;selected=null;recordResult(false);marks=[];typedShown=current().words;message('Один естественный вариант',current().words.join(' ')+'. '+current().tip);finish(current().words.join(' '))};
+function showSummary(){voice?.hide();$('exercise').style.display='none';$('summary').style.display='block';$('summaryScore').textContent=stats.correct+' / '+stats.seen;$('summaryRing').style.setProperty('--p',stats.seen?Math.round(stats.correct/stats.seen*100):0);$('summaryText').textContent=activeLevel+': фраз с первой попытки без подсказок. Разобрано '+stats.seen+' из '+round.length+'. Для повторения: '+hard.size+'.';$('repeat').disabled=!hard.size;updateStats()}
+$('next').onclick=()=>{voice?.hide();if(pos+1<round.length){pos++;load()}else showSummary()};
+function newRound(indices){const allowed=new Set(levelIndices());const next=[...new Set(indices)].filter(i=>allowed.has(i));if(!next.length)return;round=next;pos=0;stats={correct:0,seen:0};hard=new Set();completed=new Set();renderJump();renderTrack();load()}
+// History: every level keeps its own round — phrase order, position and results. It lives in this browser only and refers to phrases by id.
+function saveHistory(){if(!keepHistory||!round.length)return;const ids=list=>[...list].map(i=>DATA[i].id);saved.level=activeLevel;saved.levels[activeLevel]={round:ids(round),pos,completed:ids(completed),hard:ids(hard),correct:stats.correct,finished:$('summary').style.display==='block'};try{localStorage.setItem(LANGS[lang].historyKey,JSON.stringify(saved))}catch(_){}}
+function restoreRound(level){const s=saved.levels[level];if(!s||!Array.isArray(s.round)||!s.round.length)return false;const byId=new Map(DATA.map((e,i)=>[e.id,i])),allowed=new Set(levelIndices(level)),indices=s.round.map(id=>byId.get(id));if(new Set(indices).size!==indices.length||indices.some(i=>!allowed.has(i)))return false;const inRound=new Set(indices),pick=list=>new Set((Array.isArray(list)?list:[]).map(id=>byId.get(id)).filter(i=>inRound.has(i)));round=indices;pos=Math.min(Math.max(0,Number(s.pos)||0),round.length-1);completed=pick(s.completed);hard=pick(s.hard);stats={seen:completed.size,correct:Math.min(Math.max(0,Number(s.correct)||0),completed.size)};renderJump();renderTrack();if(s.finished)showSummary();else load();return true}
+function changeLevel(level){if(!LEVELS.includes(level)||!levelIndices(level).length)return;activeLevel=level;for(const b of $('levels').children)b.setAttribute('aria-pressed',String(b.dataset.level===level));if(!(keepHistory&&restoreRound(level)))newRound(levelIndices())}
+$('repeat').onclick=()=>newRound(shuffle([...hard]));$('restart').onclick=()=>newRound(shuffle(levelIndices()));$('jump').onchange=()=>{if(String($('jump').value).trim()==='')return;const chosen=Number($('jump').value),i=round.indexOf(chosen);if(i<0)return;pos=i;load()};
+for(const b of $('levels').children)b.onclick=()=>{if(b.dataset.level!==activeLevel)changeLevel(b.dataset.level)};
+// Enter checks the phrase or moves on; Backspace takes the last word back. Focused controls keep their own keys.
+document.addEventListener('keydown',e=>{if(e.repeat||e.ctrlKey||e.metaKey||e.altKey||$('summary').style.display==='block')return;if(e.target instanceof Element&&e.target.closest('button,select,input,summary,a,[tabindex]'))return;if(e.key==='Enter'){const b=solved?$('next'):$('check');if(!b.disabled){e.preventDefault();b.click()}}else if(e.key==='Backspace'&&!solved&&picked.length){e.preventDefault();picked.pop();selected=null;marks=[];render()}});
+// Typing mode: the phrase is typed from memory, with no word bank. Switching modes restarts the current phrase.
+$('typed').oninput=()=>{typedShown=[];marks=[];render()};
+$('typed').onkeydown=e=>{if(e.key==='Enter'&&!e.repeat){e.preventDefault();$('check').click()}};
+function setInputMode(mode,save=true){inputMode=mode==='typing'?'typing':'tiles';if(save)try{localStorage.setItem('ept-input',inputMode)}catch(_){}for(const b of $('modes').children)b.setAttribute('aria-pressed',String(b.dataset.mode===inputMode));if(!round.length)return;if(solved)render();else load()}
+for(const b of $('modes').children)b.onclick=()=>{if(b.dataset.mode!==inputMode)setInputMode(b.dataset.mode)};
+{let saved=null;try{saved=localStorage.getItem('ept-input')}catch(_){}setInputMode(saved,false)}
+// The two help pop-ups close on a click outside or Escape.
+const popups=()=>document.querySelectorAll('details.instructions[open],details.voice-details[open]');
+document.addEventListener('click',e=>{for(const d of popups())if(!d.contains(e.target))d.open=false});
+document.addEventListener('keydown',e=>{if(e.key==='Escape')for(const d of popups())d.open=false});
+const root=document.documentElement,systemDark=window.matchMedia?matchMedia('(prefers-color-scheme: dark)'):null;
+function labelTheme(){const text=root.dataset.theme==='dark'?'Включить светлую тему':'Включить тёмную тему';$('theme').setAttribute('aria-label',text);$('theme').title=text}
+$('theme').onclick=()=>{root.dataset.theme=root.dataset.theme==='dark'?'light':'dark';try{localStorage.setItem('ept-theme',root.dataset.theme)}catch(_){}labelTheme()};
+systemDark?.addEventListener?.('change',e=>{let saved=null;try{saved=localStorage.getItem('ept-theme')}catch(_){}if(saved!=='light'&&saved!=='dark'){root.dataset.theme=e.matches?'dark':'light';labelTheme()}});
+labelTheme();
+// The stored history is read even when saving is off, so that turning it back on keeps the other levels.
+function readHistory(){let raw=null;try{raw=JSON.parse(localStorage.getItem(LANGS[lang].historyKey)||'null')}catch(_){}saved=raw&&typeof raw==='object'&&raw.levels&&typeof raw.levels==='object'?{level:raw.level,levels:raw.levels}:{level:activeLevel,levels:{}}}
+// Switching the language swaps the phrase set, the texts that name the language and the history; everything else stays.
+function setLanguage(code,save=true){lang=LANGS[code]?code:'en';DATA=DATASETS[lang];const L=LANGS[lang];if(save)try{localStorage.setItem('ept-lang',lang)}catch(_){}$('langs').dataset.lang=lang;for(const b of $('langs').children)b.setAttribute('aria-pressed',String(b.dataset.lang===lang));document.title='Phrase by phrase · Разговорный '+L.adjective;$('task').setAttribute('aria-label','Соберите фразу '+L.inLang);$('typed').lang=lang;$('typed').placeholder='Наберите фразу '+L.inLang+' и нажмите Enter';$('typed').setAttribute('aria-label','Ваша фраза '+L.inLang);$('bottom-note').textContent=DATA.length+' разговорных фраз · A2–C1 · уровни ориентировочные · без регистрации';readHistory();changeLevel(keepHistory&&LEVELS.includes(saved.level)?saved.level:activeLevel)}
+for(const b of $('langs').children)b.onclick=()=>{if(b.dataset.lang!==lang)setLanguage(b.dataset.lang)};
+{let on=null;try{on=localStorage.getItem(HISTORY_ON)}catch(_){}keepHistory=on!=='0';$('keep-history').checked=keepHistory}
+$('keep-history').onchange=()=>{keepHistory=$('keep-history').checked;try{localStorage.setItem(HISTORY_ON,keepHistory?'1':'0')}catch(_){}saveHistory()};
+// Clearing asks once more on the button itself: the first click arms it for a few seconds, the second one clears.
+let clearArmed=null;
+function disarmClear(){clearTimeout(clearArmed);clearArmed=null;$('clear-history').textContent='Очистить историю';$('clear-history').classList.remove('armed')}
+$('clear-history').onclick=()=>{if(!clearArmed){$('clear-history').textContent='Точно очистить?';$('clear-history').classList.add('armed');clearArmed=setTimeout(disarmClear,4000);return}disarmClear();saved={level:activeLevel,levels:{}};try{localStorage.removeItem(LANGS[lang].historyKey)}catch(_){}newRound(levelIndices())};
+{let code=null;try{code=localStorage.getItem('ept-lang')}catch(_){}setLanguage(code,false)}
+</script><script id="voice-script">
+/* Voice practice: browser speech services, an in-memory recording fallback,
+   and a Web Audio microphone chain (software gain + level meter). */
+(() => {
+  'use strict';
+  const el = id => document.getElementById(id);
+  const panel = el('voice-panel'), status = el('voice-status'), results = el('voice-results');
+  const meter = el('voice-meter'), meterDb = el('voice-db'), meterHint = el('voice-meter-hint');
+  const gainInput = el('voice-gain'), gainOutput = el('voice-gain-value'), deviceSelect = el('voice-device');
+  const synth = window.speechSynthesis;
+  const Recognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+  const AudioCtx = window.AudioContext || window.webkitAudioContext;
+  const canSpeak = !!(synth && window.SpeechSynthesisUtterance);
+  const canCapture = !!navigator.mediaDevices?.getUserMedia;
+  const canRecord = canCapture && !!window.MediaRecorder;
+  const canMeter = canCapture && !!AudioCtx;
+  const ANDROID = /Android/i.test(navigator.userAgent);
+  const audio = el('voice-audio');
+  let phrase = '', mode = 'idle', epoch = 0, activeRecognition = null, recorder = null;
+  let utterance = null, timer = null, endTimer = null, clipURL = null;
+  // sideRecorder records the attempt while recognition listens; pendingTake is the one whose clip is still awaited.
+  let sideRecorder = null, pendingTake = null;
+  // asking: which button is waiting for microphone access ('speak' or 'record'), so that button can act as its own stop.
+  let asking = '';
+  const NORMAL_RATE = 1, SLOW_RATE = 0.7;
+  const GAIN_KEY = 'ept-mic-gain', GAIN_MIN = 50, GAIN_MAX = 500, FLOOR_DB = -60;
+  // device: the microphone picked by hand ({id, label}); an empty id means the system default.
+  const DEVICE_KEY = 'ept-mic-device';
+  let device = { id: '', label: '' }, notice = '';
+  const CONSENT_KEY = 'ept-voice-consent', CALIBRATE_MS = 4000, CALIBRATE_TARGET_DB = -6;
+  const METER_IDLE = 'Индикатор включается при записи, распознавании и проверке.';
+  let recognitionHadResult = false;
+  // sessionPeak: the loudest sample (after gain) since the meter was last started.
+  let audioCtx = null, mic = null, gainPercent = 100, meterFrame = 0, meterBuffer = null, sessionPeak = 0;
+  const stopTracks = value => { if (value) value.getTracks().forEach(track => track.stop()); };
+  // notice: a one-off remark shown in front of the next status line.
+  const note = text => { status.textContent = notice + text; notice = ''; };
+  const label = (id, text) => { el(id).querySelector('span').textContent = text; };
+  const speaking = () => mode.startsWith('recognition') || (mode === 'permission' && asking === 'speak');
+  const recording = () => mode.startsWith('recording') || (mode === 'permission' && asking === 'record');
+  // While its own action runs, a start button turns into the stop button for it. Its width is held so the row doesn't jump.
+  function face(id, live, icon, text) {
+    const button = el(id);
+    if (live && !button.classList.contains('live')) button.style.minWidth = button.offsetWidth + 'px';
+    if (!live) button.style.minWidth = '';
+    button.classList.toggle('live', live);
+    button.querySelector('use').setAttribute('href', live ? '#i-stop' : icon);
+    label(id, live ? 'Стоп' : text);
+  }
+  const denied = error => error?.name === 'NotAllowedError' || error?.name === 'SecurityError';
+  const clearTimers = () => { clearTimeout(timer); clearTimeout(endTimer); timer = endTimer = null; };
+  function update() {
+    const available = !!phrase, idle = mode === 'idle';
+    el('voice-listen').disabled = !available || !canSpeak;
+    el('voice-slow').disabled = !available || !canSpeak;
+    el('voice-speak').disabled = speaking() ? mode === 'recognition-stopping' : !available || !Recognition || !el('voice-consent').checked || !idle;
+    el('voice-record').disabled = recording() ? mode === 'recording-stopping' : !available || !canRecord || !idle;
+    face('voice-speak', speaking(), '#i-mic', 'Произнести и сравнить');
+    face('voice-record', recording(), '#i-rec', 'Записать');
+    el('voice-play').disabled = !clipURL || !idle;
+    el('voice-delete').disabled = !clipURL || !idle;
+    el('voice-monitor').disabled = !canMeter || !(idle || mode === 'monitor');
+    label('voice-monitor', mode === 'monitor' ? 'Остановить' : 'Проверить');
+    el('voice-auto').disabled = !canMeter || !idle;
+    deviceSelect.disabled = !canCapture || !(idle || mode === 'monitor');
+    gainInput.disabled = !canMeter || mode === 'calibrate';
+    el('voice-stop').disabled = idle;
+    label('voice-stop', mode === 'permission' ? 'Отменить запрос' : 'Стоп');
+    panel.setAttribute('data-state', mode);
+  }
+  /* Microphone chain: raw stream → gain → analyser → destination stream.
+     Recording (and recognition, where the browser accepts a track) takes the
+     amplified destination stream; the analyser feeds the level meter. */
+  /* Microphone choice. Device names are only visible once the browser has been
+     allowed to use a microphone, so the list is rebuilt after every capture. */
+  async function refreshDevices() {
+    let inputs = [];
+    try { inputs = (await navigator.mediaDevices.enumerateDevices()).filter(d => d.kind === 'audioinput'); } catch (_) { return; }
+    deviceSelect.replaceChildren(new Option('Системный по умолчанию', ''));
+    let unnamed = 0;
+    for (const input of inputs) {
+      // Chrome lists the system default and communications devices as aliases; the first option covers them.
+      if (!input.deviceId || input.deviceId === 'default' || input.deviceId === 'communications') continue;
+      deviceSelect.append(new Option(input.label || 'Микрофон ' + ++unnamed, input.deviceId));
+      if (input.deviceId === device.id && input.label && input.label !== device.label) setDevice(device.id, input.label);
+    }
+    if (device.id && ![...deviceSelect.options].some(option => option.value === device.id)) {
+      // Before the browser grants access it hides device ids, so a missing entry only means "unplugged" once ids are visible.
+      const listed = inputs.some(input => input.deviceId);
+      deviceSelect.append(new Option((device.label || 'Выбранный микрофон') + (listed ? ' (сейчас недоступен)' : ''), device.id));
+    }
+    deviceSelect.value = device.id;
+  }
+  function setDevice(id, text = '') {
+    device = { id, label: id ? text : '' };
+    try { if (id) localStorage.setItem(DEVICE_KEY, JSON.stringify(device)); else localStorage.removeItem(DEVICE_KEY); } catch (_) {}
+  }
+  // Opens the chosen microphone. If it has gone (unplugged), the choice is dropped and the system default is used.
+  async function acquireMic() {
+    let stream;
+    try { stream = await navigator.mediaDevices.getUserMedia({ audio: device.id ? { deviceId: { exact: device.id } } : true }); }
+    catch (error) {
+      if (!device.id || !['OverconstrainedError', 'NotFoundError'].includes(error?.name)) throw error;
+      setDevice(''); notice = 'Выбранный микрофон недоступен — включён системный. ';
+      stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+    }
+    refreshDevices();
+    return stream;
+  }
+  function context() {
+    if (!AudioCtx) return null;
+    try {
+      if (!audioCtx || audioCtx.state === 'closed') audioCtx = new AudioCtx();
+      if (audioCtx.state === 'suspended') audioCtx.resume().catch(() => {});
+    } catch (_) { audioCtx = null; }
+    return audioCtx;
+  }
+  function openMic(raw) {
+    closeMic();
+    mic = { raw, out: raw };
+    const ctx = context();
+    if (!ctx) return mic;
+    try {
+      const source = ctx.createMediaStreamSource(raw), gain = ctx.createGain();
+      const analyser = ctx.createAnalyser(), destination = ctx.createMediaStreamDestination();
+      gain.gain.value = gainPercent / 100;
+      analyser.fftSize = 2048; analyser.smoothingTimeConstant = 0;
+      source.connect(gain); gain.connect(analyser); analyser.connect(destination);
+      Object.assign(mic, { source, gain, analyser, out: destination.stream });
+      startMeter();
+    } catch (_) { mic = { raw, out: raw }; }
+    return mic;
+  }
+  function closeMic() {
+    const old = mic; mic = null; stopMeter();
+    if (!old) return;
+    try { old.source?.disconnect(); old.gain?.disconnect(); old.analyser?.disconnect(); } catch (_) {}
+    if (old.out !== old.raw) stopTracks(old.out);
+    stopTracks(old.raw);
+  }
+  const toDb = value => value > 0 ? Math.max(FLOOR_DB, 20 * Math.log10(value)) : FLOOR_DB;
+  const toPercent = db => (Math.min(1, Math.max(0, (db - FLOOR_DB) / -FLOOR_DB)) * 100).toFixed(1) + '%';
+  function verdict(text, tone = '') { if (meterHint.textContent !== text) meterHint.textContent = text; meterHint.dataset.tone = tone; }
+  function startMeter() {
+    cancelAnimationFrame(meterFrame);
+    // level: fast attack, smooth release; hold: short peak marker; loudest: slow envelope for the advice line.
+    let level = FLOOR_DB, hold = FLOOR_DB, holdAt = 0, loudest = FLOOR_DB, clipAt = -Infinity, last = performance.now(), textAt = 0;
+    sessionPeak = 0; meter.classList.add('live'); verdict('Говорите — индикатор покажет уровень.');
+    const tick = now => {
+      const analyser = mic?.analyser; if (!analyser) return;
+      if (!meterBuffer || meterBuffer.length !== analyser.fftSize) meterBuffer = new Float32Array(analyser.fftSize);
+      analyser.getFloatTimeDomainData(meterBuffer);
+      let peak = 0; for (let i = 0; i < meterBuffer.length; i++) { const v = Math.abs(meterBuffer[i]); if (v > peak) peak = v; }
+      const seconds = Math.min(0.25, (now - last) / 1000), db = toDb(peak); last = now;
+      if (peak > sessionPeak) sessionPeak = peak;
+      if (peak >= 0.999) clipAt = now;
+      level = Math.max(db, level - 45 * seconds);
+      if (db >= hold) { hold = db; holdAt = now; } else if (now - holdAt > 1200) hold = Math.max(level, hold - 25 * seconds);
+      loudest = Math.max(db, loudest - 5 * seconds);
+      const clipping = now - clipAt < 1500;
+      meter.style.setProperty('--level', toPercent(level)); meter.style.setProperty('--peak', toPercent(hold));
+      meter.classList.toggle('clip', clipping);
+      if (now - textAt > 180) {
+        textAt = now;
+        const shown = Math.round(Math.min(0, hold));
+        meterDb.textContent = hold <= FLOOR_DB ? '— дБ' : (shown < 0 ? '−' + -shown : '0') + ' дБ';
+        meter.setAttribute('aria-valuenow', String(shown));
+        if (clipping) verdict('Перегруз: звук искажается, убавьте усиление.', 'bad');
+        else if (loudest > -3) verdict('На пределе: немного убавьте усиление.', 'warn');
+        else if (loudest >= -20) verdict('Хороший уровень.', 'good');
+        else if (loudest >= -45) verdict('Тихо: добавьте усиление или говорите ближе к микрофону.', 'warn');
+        else verdict('Говорите — индикатор покажет уровень.');
+      }
+      meterFrame = requestAnimationFrame(tick);
+    };
+    meterFrame = requestAnimationFrame(tick);
+  }
+  function stopMeter() {
+    cancelAnimationFrame(meterFrame); meterFrame = 0;
+    meter.classList.remove('live', 'clip');
+    meter.style.setProperty('--level', '0%'); meter.style.setProperty('--peak', '0%');
+    meter.setAttribute('aria-valuenow', String(FLOOR_DB)); meterDb.textContent = '— дБ';
+  }
+  function setGain(value, save = true) {
+    const rounded = Math.round(Number(value) / 10) * 10;
+    gainPercent = Math.min(GAIN_MAX, Math.max(GAIN_MIN, rounded || 100));
+    const db = 20 * Math.log10(gainPercent / 100), dbText = (db > 0 ? '+' : db < 0 ? '−' : '') + Math.abs(db).toFixed(1).replace('.', ',') + ' дБ';
+    gainInput.value = gainPercent;
+    gainInput.style.setProperty('--p', String((gainPercent - GAIN_MIN) / (GAIN_MAX - GAIN_MIN)));
+    gainOutput.textContent = '×' + String(gainPercent / 100).replace('.', ',') + (gainPercent === 100 ? '' : ' · ' + dbText);
+    gainInput.setAttribute('aria-valuetext', gainPercent + '%, ' + dbText);
+    el('voice-gain-reset').disabled = gainPercent === 100;
+    if (mic?.gain && audioCtx) mic.gain.gain.setTargetAtTime(gainPercent / 100, audioCtx.currentTime, 0.02);
+    if (save) try { localStorage.setItem(GAIN_KEY, String(gainPercent)); } catch (_) {}
+  }
+  function clearClip() {
+    audio.pause(); audio.removeAttribute('src'); audio.load();
+    if (clipURL) URL.revokeObjectURL(clipURL);
+    clipURL = null; pendingTake = null;
+  }
+  /* Recognition attempts are recorded too, so the phrase that was just compared
+     can be played back. This recorder lives outside `recorder`, which belongs to
+     the manual "record" mode. */
+  function startSideRecording(input) {
+    if (!canRecord) return;
+    try {
+      const chunks = [], value = new window.MediaRecorder(input);
+      value.ondataavailable = event => { if (event.data.size) chunks.push(event.data); };
+      value.onstop = () => {
+        // Dropped on purpose, or the clip was cleared meanwhile (new phrase, new recording).
+        if (pendingTake !== value) return;
+        pendingTake = null;
+        const blob = new Blob(chunks, {type: value.mimeType || chunks[0]?.type || 'audio/webm'});
+        if (!blob.size) return;
+        if (clipURL) URL.revokeObjectURL(clipURL);
+        clipURL = URL.createObjectURL(blob); audio.src = clipURL; update();
+      };
+      clearClip(); value.start(); sideRecorder = value;
+    } catch (_) { sideRecorder = null; }
+  }
+  function stopSideRecording(keep) {
+    const value = sideRecorder; sideRecorder = null;
+    if (!value) return;
+    pendingTake = keep ? value : null;
+    try { if (value.state !== 'inactive') value.stop(); } catch (_) { pendingTake = null; }
+  }
+  function cancelAll() {
+    epoch++; clearTimers(); asking = '';
+    const oldRecognition = activeRecognition; activeRecognition = null;
+    if (oldRecognition) { oldRecognition.onresult = oldRecognition.onend = oldRecognition.onerror = oldRecognition.onstart = null; try { oldRecognition.abort(); } catch (_) {} }
+    const oldRecorder = recorder; recorder = null;
+    if (oldRecorder) { oldRecorder.ondataavailable = oldRecorder.onstop = oldRecorder.onerror = null; try { if (oldRecorder.state !== 'inactive') oldRecorder.stop(); } catch (_) {} }
+    stopSideRecording(false); closeMic();
+    const oldUtterance = utterance; utterance = null;
+    if (oldUtterance) oldUtterance.onend = oldUtterance.onerror = null;
+    try { synth?.cancel(); } catch (_) {}
+    audio.pause();
+    try { audio.currentTime = 0; } catch (_) {}
+    mode = 'idle'; update();
+  }
+  function reset() { cancelAll(); clearClip(); phrase = ''; results.replaceChildren(); note(''); verdict(METER_IDLE); panel.classList.add('hidden'); update(); }
+  function show(text) {
+    reset(); phrase = String(text).trim(); el('voice-target').textContent = phrase; el('voice-target').lang = lang;
+    panel.classList.remove('hidden');
+    note('Сначала послушайте образец, затем повторите фразу вслух.'); update();
+  }
+  function speak(slow = false) {
+    if (!phrase || !canSpeak) return;
+    cancelAll(); const myEpoch = epoch;
+    // Slow mode is the same whole sentence at a lower rate. Reading it word by
+    // word dragged: every separate utterance adds its own start-up pause, which
+    // no rate setting can shorten.
+    // A voice of the training language: a local one in the standard variant first (en-US, de-DE), then any other.
+    const L = LANGS[lang], tag = v => String(v.lang || '').toLowerCase().replace('_', '-');
+    let all = [], voices = [];
+    try { all = synth.getVoices(); voices = all.filter(v => tag(v) === lang || tag(v).startsWith(lang + '-')); } catch (_) {}
+    const standard = v => tag(v) === L.speech.toLowerCase();
+    const chosen = voices.find(v => v.localService && standard(v)) || voices.find(v => v.localService) || voices.find(standard) || voices[0];
+    const missing = all.length && !voices.length ? 'В браузере не найден ' + L.adjective + ' голос — образец может звучать неправильно. ' : '';
+    mode = 'speech'; note(missing + (slow ? 'Медленно: тот же образец в пониженном темпе…' : 'Слушайте образец…')); update();
+    function fail() {
+      if (epoch !== myEpoch) return;
+      cancelAll(); note('Озвучка недоступна. Проверьте ' + L.adjective + ' голос и звук в браузере или системе.');
+    }
+    let item;
+    try {
+      item = new window.SpeechSynthesisUtterance(phrase);
+      item.lang = chosen?.lang || L.speech;
+      if (chosen) item.voice = chosen;
+      item.rate = slow ? SLOW_RATE : NORMAL_RATE;
+    } catch (_) { fail(); return; }
+    utterance = item;
+    item.onend = () => {
+      if (epoch !== myEpoch || utterance !== item) return;
+      item.onend = item.onerror = null; utterance = null;
+      clearTimers(); mode = 'idle'; note('Теперь повторите фразу.'); update();
+    };
+    item.onerror = () => { if (utterance === item) fail(); };
+    timer = setTimeout(() => { if (epoch !== myEpoch) return; cancelAll(); note('Озвучка не завершилась. Попробуйте ещё раз или проверьте голос браузера.'); }, slow ? 40000 : 25000);
+    try { if (synth.paused) synth.resume(); synth.speak(item); } catch (_) { if (utterance === item) fail(); }
+  }
+  function tokens(text, resolveExpected = false) {
+    const words = String(text).toLowerCase().replace(/[’‘`]/g, "'").match(/[a-zäöüß0-9]+(?:'[a-zäöüß]+)?/g) || [];
+    // German has no ambiguous contractions to resolve; only the clitic 's is spelled out (geht's = geht es).
+    if (lang === 'de') return words.flatMap(word => word.endsWith("'s") ? [word.slice(0, -2), 'es'] : [word]);
+    const participles = new Set(['been','done','gone','seen','known','given','taken','made','said','left','found','thought','bought','brought','told','heard','felt','kept','paid','met','lost','got','gotten','written','spoken','broken','chosen','driven','eaten','fallen','forgotten','shown','won','understood','stood','sent','spent','built']);
+    const sharedForms = new Set(['run','read','cut','put','set','let','come','hurt','cost']);
+    return words.flatMap((word, index) => {
+      if (word === "won't") return ['will', 'not'];
+      if (word === "can't" || word === 'cannot') return ['can', 'not'];
+      if (word === "let's") return ['let', 'us'];
+      if (word === "i'm") return ['i', 'am'];
+      let match;
+      if ((match = word.match(/^(you|we|they)'re$/))) return [match[1], 'are'];
+      if ((match = word.match(/^(i|you|we|they|he|she|it)'ll$/))) return [match[1], 'will'];
+      if ((match = word.match(/^(i|you|we|they)'ve$/))) return [match[1], 'have'];
+      // Recognition can use either a contraction or its full form. Resolve the
+      // sample's clear grammatical cues so "we would better" isn't a match for
+      // "we'd better", while retaining genuinely ambiguous written forms.
+      const next = words.slice(index + 1).find(w => !['just','already','never','ever','really','probably','not'].includes(w)) || '';
+      if ((match = word.match(/^(i|you|we|they|he|she|it)'d$/))) {
+        let form = ['had', 'would'];
+        if (resolveExpected) {
+          if (next === 'better' || /ed$/.test(next) || participles.has(next)) form = 'had';
+          else if (sharedForms.has(next)) {
+            if (words.slice(0,index).includes('if') && words.slice(0,index).includes('have')) form = 'had';
+          } else form = 'would';
+        }
+        return [match[1], form];
+      }
+      if ((match = word.match(/^(it|that|there|what|he|she)'s$/))) {
+        let form = ['is', 'has'];
+        if (resolveExpected) {
+          if (next === 'been') form = 'has';
+          else if (!/ed$/.test(next) && !participles.has(next) && !sharedForms.has(next)) form = 'is';
+        }
+        return [match[1], form];
+      }
+      if (word.endsWith("n't")) return [word.slice(0, -3), 'not'];
+      return [word];
+    });
+  }
+  const forms = word => Array.isArray(word) ? word : [word];
+  // Recognisers write small numbers as digits and may spell ß/umlauts differently; fold both before comparing.
+  const NUMBERS = {
+    en: ['zero','one','two','three','four','five','six','seven','eight','nine','ten','eleven','twelve'],
+    de: ['null','eins','zwei','drei','vier','fünf','sechs','sieben','acht','neun','zehn','elf','zwölf']
+  };
+  const fold = word => (/^\d+$/.test(word) && NUMBERS[lang][Number(word)] || word).replace(/ä/g, 'ae').replace(/ö/g, 'oe').replace(/ü/g, 'ue').replace(/ß/g, 'ss');
+  const sameWord = (left, right) => forms(left).some(a => forms(right).some(b => fold(a) === fold(b)));
+  const wordLabel = word => forms(word).join(' / ');
+  function align(expected, actual) {
+    const rows = Array.from({length: expected.length + 1}, () => Array(actual.length + 1).fill(0));
+    for (let i=0; i<=expected.length; i++) rows[i][0]=i;
+    for (let j=0; j<=actual.length; j++) rows[0][j]=j;
+    for (let i=1; i<=expected.length; i++) for (let j=1; j<=actual.length; j++) rows[i][j] = Math.min(rows[i-1][j]+1, rows[i][j-1]+1, rows[i-1][j-1]+(sameWord(expected[i-1],actual[j-1])?0:1));
+    const aligned=[]; let i=expected.length,j=actual.length;
+    while (i || j) {
+      if (i && j && rows[i][j]===rows[i-1][j-1]+(sameWord(expected[i-1],actual[j-1])?0:1)) { aligned.unshift({expected:expected[--i],actual:actual[--j]}); }
+      else if (i && rows[i][j]===rows[i-1][j]+1) aligned.unshift({expected:expected[--i],actual:''});
+      else aligned.unshift({expected:'',actual:actual[--j]});
+    }
+    return aligned;
+  }
+  function resultLine(text, className) { const p=document.createElement('p'); p.textContent=text; if(className)p.className=className; results.append(p); }
+  function compare(transcript) {
+    results.replaceChildren();
+    const expected=tokens(phrase,true), actual=tokens(transcript), pairs=align(expected,actual);
+    if (!actual.length) { note('Разборчивой фразы не получено. Попробуйте снова или запишите себя.'); return; }
+    const matches=pairs.filter(p=>p.expected && sameWord(p.expected,p.actual)).length;
+    const exact=pairs.every(p=>sameWord(p.expected,p.actual));
+    resultLine(exact ? 'Текст совпал с образцом.' : 'Совпало '+matches+' из '+expected.length+' слов образца.', exact ? 'voice-good' : 'voice-warning');
+    const words=document.createElement('div'); words.className='voice-comparison'; words.setAttribute('aria-label','Сравнение слов');
+    pairs.forEach(p=>{
+      const chip=document.createElement('span'); const match=sameWord(p.expected,p.actual); chip.className='voice-chip '+(match?'match':'mismatch');
+      chip.textContent=match ? '✓ '+forms(p.expected).filter(form=>forms(p.actual).some(other=>fold(other)===fold(form))).join(' / ') :(!p.expected ? '+ '+wordLabel(p.actual) : !p.actual ? 'Нет: '+wordLabel(p.expected) : wordLabel(p.expected)+' ← '+wordLabel(p.actual));
+      chip.title=match ? 'Слово распознано' : !p.expected ? 'Лишнее слово' : !p.actual ? 'Слово не распознано' : 'Слева образец, справа распознанное слово';
+      words.append(chip);
+    });
+    results.append(words);
+    resultLine('Распознано: «'+transcript+'»','voice-fine');
+    if (sideRecorder) note(exact ? 'Слова распознаны верно. Нажмите «Моя запись» и сравните звучание с образцом.' : 'Есть расхождения в распознанном тексте. Послушайте «Моя запись» и попробуйте ещё раз.');
+    else note(exact ? 'Слова распознаны верно. Запишите себя и сравните звучание с образцом.' : 'Есть расхождения в распознанном тексте. Попробуйте ещё раз.');
+  }
+  function finishRecognition() {
+    const value=activeRecognition; if (!value) return;
+    mode='recognition-stopping'; clearTimeout(timer); note('Завершаю распознавание…'); update();
+    try { value.stop(); } catch (_) { cancelAll(); note('Распознавание остановлено. Можно попробовать ещё раз.'); return; }
+    const myEpoch=epoch;
+    endTimer=setTimeout(()=>{ if(epoch!==myEpoch || !activeRecognition)return; const kept=!!sideRecorder; stopSideRecording(true); cancelAll(); note('Распознавание остановлено. Ответ сервиса не получен'+(kept ? ', но запись попытки сохранена — её можно прослушать.' : '; попробуйте запись для самопроверки.')); },2500);
+  }
+  async function startRecognition() {
+    if (!phrase || !Recognition || !el('voice-consent').checked || mode!=='idle') return;
+    cancelAll(); results.replaceChildren(); const myEpoch=epoch;
+    let recognition;
+    try { recognition=new Recognition(); } catch (_) { note('Не удалось включить распознавание. Используйте запись для самопроверки.'); return; }
+    // The meter and the recording of this attempt need their own microphone
+    // stream next to the browser's capture. With gain or a hand-picked
+    // microphone that stream also replaces the browser's capture, which always
+    // takes the default device as is. Android can't run two captures at once,
+    // so there the stream is opened only when it does replace the capture.
+    const ownTrack=gainPercent!==100 || !!device.id;
+    let boosted=null;
+    if ((canMeter || canRecord) && (!ANDROID || ownTrack)) {
+      asking='speak'; mode='permission'; note('Ожидаю разрешения на микрофон.'); update(); context();
+      try {
+        const acquired=await acquireMic();
+        if(epoch!==myEpoch){stopTracks(acquired);return;}
+        openMic(acquired); startSideRecording(mic.out);
+        if(ownTrack)boosted=mic.out.getAudioTracks()[0] || null;
+      } catch(error) {
+        if(epoch!==myEpoch)return;
+        if(denied(error)){cancelAll();note('Нет доступа к микрофону. Разрешите его в настройках браузера, только если хотите использовать эту функцию.');return;}
+        stopSideRecording(false); closeMic(); // No meter or recording, but the browser's own capture may still work.
+      }
+    }
+    activeRecognition=recognition; recognitionHadResult=false;
+    recognition.lang=LANGS[lang].speech; recognition.continuous=false; recognition.interimResults=false; recognition.maxAlternatives=1;
+    mode='recognition'; note('Разрешите микрофон, если браузер спросит, и произнесите фразу. До 15 секунд.'); update();
+    recognition.onstart=()=>{ if(epoch===myEpoch)note((sideRecorder ? 'Слушаю и записываю одну фразу…' : 'Слушаю одну фразу…')+' Нажмите «Стоп», когда закончите.'); };
+    recognition.onresult=event=>{ if(epoch!==myEpoch || activeRecognition!==recognition)return; let transcript=''; for(let i=0;i<event.results.length;i++)if(event.results[i].isFinal)transcript+=' '+event.results[i][0].transcript; if(transcript.trim()){recognitionHadResult=true;compare(transcript.trim());} };
+    recognition.onerror=event=>{
+      if(epoch!==myEpoch || activeRecognition!==recognition)return;
+      const reasons={'not-allowed':'Нет доступа к микрофону. Разрешите его в настройках браузера, только если хотите использовать эту функцию.','service-not-allowed':'Браузер не разрешает этот сервис распознавания. Попробуйте запись для самопроверки.','audio-capture':'Микрофон недоступен. Проверьте подключение и доступ браузера.','no-speech':'Речь не обнаружена. Попробуйте ещё раз в тихом месте.','network':'Сервис распознавания недоступен или нет соединения. Используйте запись для самопроверки.','language-not-supported':'Этот сервис не поддерживает выбранный язык. Используйте запись для самопроверки.','aborted':'Распознавание отменено.'};
+      // The attempt stays available for playback unless the microphone itself was the problem.
+      const kept=!!sideRecorder && !['aborted','not-allowed','audio-capture'].includes(event.error);
+      stopSideRecording(kept); cancelAll();
+      note((reasons[event.error]||'Распознавание не удалось. Можно попробовать ещё раз или записать себя.')+(kept ? ' Запись попытки сохранена — её можно прослушать.' : ''));
+    };
+    recognition.onend=()=>{ if(epoch!==myEpoch || activeRecognition!==recognition)return; activeRecognition=null; clearTimers(); const kept=!!sideRecorder; stopSideRecording(true); closeMic(); mode='idle'; if(!recognitionHadResult)note('Фразу не удалось распознать. '+(kept ? 'Запись попытки сохранена — послушайте её и попробуйте ещё раз.' : 'Попробуйте ещё раз или запишите себя.')); update(); };
+    timer=setTimeout(()=>{if(epoch===myEpoch)finishRecognition();},15000);
+    try {
+      // Browsers that accept an audio track recognise the amplified signal; if
+      // the track is refused, fall back to the browser's own capture.
+      if (boosted) { try { recognition.start(boosted); } catch (_) { recognition.start(); } }
+      else recognition.start();
+    } catch (_) { cancelAll(); note('Не удалось запустить распознавание. Используйте запись для самопроверки.'); }
+  }
+  function finishRecording() {
+    if(!recorder || mode!=='recording')return;
+    mode='recording-stopping'; clearTimeout(timer); note('Завершаю запись…'); update();
+    try { recorder.stop(); closeMic(); } catch (_) { cancelAll(); note('Не удалось завершить запись. Попробуйте ещё раз.'); return; }
+    const myEpoch=epoch;
+    endTimer=setTimeout(()=>{if(epoch!==myEpoch || !recorder)return;cancelAll();note('Запись не завершилась. Попробуйте ещё раз.');},2500);
+  }
+  async function startRecording() {
+    if(!phrase || !canRecord || mode!=='idle')return;
+    cancelAll(); clearClip(); const myEpoch=epoch; asking='record'; mode='permission'; note('Ожидаю разрешения на микрофон. Запись начнётся только после него.'); update(); context();
+    try {
+      const acquired=await acquireMic();
+      if(epoch!==myEpoch){stopTracks(acquired);return;}
+      const chunks=[]; const value=new window.MediaRecorder(openMic(acquired).out); recorder=value;
+      value.ondataavailable=event=>{if(epoch===myEpoch && recorder===value && event.data.size)chunks.push(event.data);};
+      value.onerror=()=>{if(epoch!==myEpoch)return;cancelAll();note('Запись не удалась. Проверьте микрофон и попробуйте снова.');};
+      value.onstop=()=>{
+        if(epoch!==myEpoch || recorder!==value)return;
+        clearTimers(); closeMic();recorder=null;mode='idle';
+        const blob=new Blob(chunks,{type:value.mimeType || chunks[0]?.type || 'audio/webm'});
+        if(blob.size){clipURL=URL.createObjectURL(blob);audio.src=clipURL;note('Запись готова. Прослушайте её и сравните с образцом.');}
+        else note('Запись пуста. Попробуйте ещё раз.');
+        update();
+      };
+      value.start(); mode='recording'; note('Идёт локальная запись… Нажмите «Стоп». Максимум 20 секунд.');update();
+      timer=setTimeout(()=>{if(epoch===myEpoch)finishRecording();},20000);
+    } catch(error) {
+      if(epoch!==myEpoch)return;
+      cancelAll();note(denied(error) ? 'Доступ к микрофону не разрешён. Можно продолжать без записи.' : 'Микрофон или запись недоступны. Проверьте браузер и устройство.');
+    }
+  }
+  // Level check: the meter runs on the live microphone, nothing is recorded or sent.
+  async function toggleMonitor() {
+    if(mode==='monitor'){cancelAll();note('Проверка уровня остановлена.');return;}
+    if(!canMeter || mode!=='idle')return;
+    cancelAll(); const myEpoch=epoch; mode='permission'; note('Ожидаю разрешения на микрофон.'); update(); context();
+    try {
+      const acquired=await acquireMic();
+      if(epoch!==myEpoch){stopTracks(acquired);return;}
+      if(!openMic(acquired).analyser){cancelAll();note('Индикатор уровня недоступен в этом браузере.');return;}
+      mode='monitor'; note('Проверка уровня: говорите обычным голосом и подберите усиление. Звук не записывается.');update();
+      timer=setTimeout(()=>{if(epoch!==myEpoch)return;cancelAll();note('Проверка уровня завершена.');},30000);
+    } catch(error) {
+      if(epoch!==myEpoch)return;
+      cancelAll();note(denied(error) ? 'Доступ к микрофону не разрешён.' : 'Микрофон недоступен. Проверьте браузер и устройство.');
+    }
+  }
+  // Auto gain: listen for a few seconds and set the gain so the loudest peak of the voice lands near the target.
+  async function calibrate() {
+    if(!canMeter || mode!=='idle')return;
+    cancelAll(); const myEpoch=epoch; mode='permission'; note('Ожидаю разрешения на микрофон.'); update(); context();
+    try {
+      const acquired=await acquireMic();
+      if(epoch!==myEpoch){stopTracks(acquired);return;}
+      if(!openMic(acquired).analyser){cancelAll();note('Автоподбор недоступен в этом браузере.');return;}
+      mode='calibrate'; note('Автоподбор: скажите фразу обычным голосом. Слушаю '+CALIBRATE_MS/1000+' секунды…');update();
+      timer=setTimeout(()=>{
+        if(epoch!==myEpoch)return;
+        // The slider is locked while listening, so the raw microphone peak is the measured peak without the current gain.
+        const rawDb=sessionPeak>0 ? 20*Math.log10(sessionPeak/(gainPercent/100)) : -Infinity;
+        cancelAll();
+        if(rawDb<-50){note('Автоподбор: голос не услышан, усиление не изменено. Попробуйте ещё раз.');return;}
+        setGain(100*Math.pow(10,(CALIBRATE_TARGET_DB-rawDb)/20));
+        const wanted=CALIBRATE_TARGET_DB-rawDb, got=20*Math.log10(gainPercent/100);
+        note('Усиление подобрано: '+gainOutput.textContent+'.'+(wanted-got>1.5 ? ' Голос всё ещё тихий — говорите ближе к микрофону.' : ''));
+      },CALIBRATE_MS);
+    } catch(error) {
+      if(epoch!==myEpoch)return;
+      cancelAll();note(denied(error) ? 'Доступ к микрофону не разрешён.' : 'Микрофон недоступен. Проверьте браузер и устройство.');
+    }
+  }
+  async function playRecording() {
+    if(!clipURL || mode!=='idle')return;
+    cancelAll();const myEpoch=epoch;mode='playback';note('Слушайте свою запись…');update();
+    try { await audio.play(); } catch(_){if(epoch!==myEpoch)return;cancelAll();note('Не удалось воспроизвести запись. Попробуйте записать её ещё раз.');}
+  }
+  function stop() {
+    if(mode==='recognition')finishRecognition();
+    else if(mode==='recording')finishRecording();
+    else {cancelAll();note('Остановлено.');}
+  }
+  el('voice-listen').onclick=()=>speak(false);
+  el('voice-slow').onclick=()=>speak(true);
+  el('voice-speak').onclick=()=>{ if(speaking())stop(); else startRecognition(); };
+  el('voice-record').onclick=()=>{ if(recording())stop(); else startRecording(); };
+  el('voice-monitor').onclick=toggleMonitor;
+  el('voice-auto').onclick=calibrate;
+  el('voice-stop').onclick=stop;
+  el('voice-play').onclick=playRecording;
+  el('voice-delete').onclick=()=>{clearClip();note('Запись удалена из памяти вкладки.');update();};
+  el('voice-consent').onchange=()=>{
+    const allowed=el('voice-consent').checked;
+    try { if(allowed)localStorage.setItem(CONSENT_KEY,'1'); else localStorage.removeItem(CONSENT_KEY); } catch (_) {}
+    if(!allowed && activeRecognition){cancelAll();note('Распознавание отменено.');}
+    update();
+  };
+  gainInput.oninput=()=>setGain(gainInput.value);
+  // Picking a microphone starts the level check on it straight away, so the choice can be seen working.
+  deviceSelect.onchange=()=>{
+    setDevice(deviceSelect.value, deviceSelect.value ? deviceSelect.selectedOptions[0].textContent.replace(' (сейчас недоступен)','') : '');
+    if(mode==='monitor')cancelAll();
+    if(mode==='idle' && canMeter)toggleMonitor();
+  };
+  if(canCapture){
+    try { const saved=JSON.parse(localStorage.getItem(DEVICE_KEY) || 'null'); if(saved && typeof saved.id==='string' && saved.id)device={id:saved.id,label:String(saved.label || '')}; } catch (_) {}
+    refreshDevices();
+    navigator.mediaDevices.addEventListener?.('devicechange',refreshDevices);
+  }
+  el('voice-gain-reset').onclick=()=>setGain(100);
+  audio.onended=()=>{if(mode==='playback'){mode='idle';note('Сравните звучание с образцом.');update();}};
+  audio.onerror=()=>{if(mode==='playback'){cancelAll();note('Не удалось воспроизвести запись. Попробуйте записать её ещё раз.');}};
+  const unavailable=[];
+  if(!canSpeak)unavailable.push('Озвучка не поддерживается этим браузером.');
+  if(!Recognition)unavailable.push('Распознавание не поддерживается этим браузером. Используйте запись для самопроверки.');
+  if(!canRecord)unavailable.push('Запись недоступна. Для микрофона может потребоваться другой браузер или безопасная страница HTTPS/localhost.');
+  else if(!canMeter)unavailable.push('Индикатор уровня и усиление недоступны в этом браузере.');
+  el('voice-support').textContent=unavailable.join(' ');
+  let savedGain=null;
+  try { savedGain=localStorage.getItem(GAIN_KEY); el('voice-consent').checked=localStorage.getItem(CONSENT_KEY)==='1'; } catch (_) {}
+  setGain(savedGain || 100, false); verdict(METER_IDLE);
+  function suspendPage() { cancelAll(); clearClip(); if (phrase) note('Аудио остановлено; запись удалена из памяти вкладки.'); update(); }
+  window.addEventListener('pagehide',suspendPage);
+  window.addEventListener('beforeunload',suspendPage);
+  document.addEventListener('visibilitychange',()=>{if(document.hidden && mode!=='idle'){cancelAll();note('Остановлено при переключении вкладки.');}});
+  voice={show,hide:reset};update();
+})();
+</script>
+</body>
+</html>
